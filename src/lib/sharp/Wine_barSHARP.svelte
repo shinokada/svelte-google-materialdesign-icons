@@ -1,1 +1,19 @@
-<script>export let size="24"; export let color="currentColor";export let ariaLabel="wine_bar" </script><svg xmlns="http://www.w3.org/2000/svg"  width={size} height={size} fill={color} class={$$props.class} {...$$restProps} aria-label={ariaLabel} viewBox="0 0 24 24"><path d="M6 3v6c0 2.97 2.16 5.43 5 5.91V19H8v2h8v-2h-3v-4.09c2.84-.48 5-2.94 5-5.91V3H6zm10 5H8V5h8v3z"/></svg>
+<script>
+	export let size = '24';
+	export let color = 'currentColor';
+	export let ariaLabel = 'wine_bar';
+</script>
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width={size}
+	height={size}
+	fill={color}
+	class={$$props.class}
+	{...$$restProps}
+	aria-label={ariaLabel}
+	viewBox="0 0 24 24"
+	><path
+		d="M6 3v6c0 2.97 2.16 5.43 5 5.91V19H8v2h8v-2h-3v-4.09c2.84-.48 5-2.94 5-5.91V3H6zm10 5H8V5h8v3z"
+	/></svg
+>

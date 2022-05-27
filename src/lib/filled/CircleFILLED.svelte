@@ -1,1 +1,17 @@
-<script>export let size="24"; export let color="currentColor";export let ariaLabel="circle" </script><svg xmlns="http://www.w3.org/2000/svg"  width={size} height={size} fill={color} class={$$props.class} {...$$restProps} aria-label={ariaLabel} viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>
+<script>
+	export let size = '24';
+	export let color = 'currentColor';
+	export let ariaLabel = 'circle';
+</script>
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width={size}
+	height={size}
+	fill={color}
+	class={$$props.class}
+	{...$$restProps}
+	aria-label={ariaLabel}
+	viewBox="0 0 24 24"
+	><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z" /></svg
+>

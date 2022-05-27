@@ -1,1 +1,16 @@
-<script>export let size="24"; export let color="currentColor";export let ariaLabel="drive_file_move_rtl" </script><svg xmlns="http://www.w3.org/2000/svg"  width={size} height={size} fill={color} class={$$props.class} {...$$restProps} aria-label={ariaLabel} viewBox="0 0 24 24"><path d="M22 6H12l-2-2H2v16h20V6zM12 17l-4-4 4-4v3h4v2h-4v3z"/></svg>
+<script>
+	export let size = '24';
+	export let color = 'currentColor';
+	export let ariaLabel = 'drive_file_move_rtl';
+</script>
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width={size}
+	height={size}
+	fill={color}
+	class={$$props.class}
+	{...$$restProps}
+	aria-label={ariaLabel}
+	viewBox="0 0 24 24"><path d="M22 6H12l-2-2H2v16h20V6zM12 17l-4-4 4-4v3h4v2h-4v3z" /></svg
+>

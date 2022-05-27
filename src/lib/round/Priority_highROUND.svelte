@@ -1,1 +1,19 @@
-<script>export let size="24"; export let color="currentColor";export let ariaLabel="priority_high" </script><svg xmlns="http://www.w3.org/2000/svg"  width={size} height={size} fill={color} class={$$props.class} {...$$restProps} aria-label={ariaLabel} viewBox="0 0 24 24"><circle cx="12" cy="19" r="2"/><path d="M12 3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+<script>
+	export let size = '24';
+	export let color = 'currentColor';
+	export let ariaLabel = 'priority_high';
+</script>
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width={size}
+	height={size}
+	fill={color}
+	class={$$props.class}
+	{...$$restProps}
+	aria-label={ariaLabel}
+	viewBox="0 0 24 24"
+	><circle cx="12" cy="19" r="2" /><path
+		d="M12 3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2z"
+	/></svg
+>

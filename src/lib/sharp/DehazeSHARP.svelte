@@ -1,1 +1,16 @@
-<script>export let size="24"; export let color="currentColor";export let ariaLabel="dehaze" </script><svg xmlns="http://www.w3.org/2000/svg"  width={size} height={size} fill={color} class={$$props.class} {...$$restProps} aria-label={ariaLabel} viewBox="0 0 24 24"><path d="M2 16v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20V6H2z"/></svg>
+<script>
+	export let size = '24';
+	export let color = 'currentColor';
+	export let ariaLabel = 'dehaze';
+</script>
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width={size}
+	height={size}
+	fill={color}
+	class={$$props.class}
+	{...$$restProps}
+	aria-label={ariaLabel}
+	viewBox="0 0 24 24"><path d="M2 16v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20V6H2z" /></svg
+>
