@@ -1,0 +1,1 @@
+<script>export let size="24"; export let color="currentColor";export let ariaLabel="vertical_shades" </script><svg xmlns="http://www.w3.org/2000/svg"  width={size} height={size} fill={color} class={$$props.class} {...$$restProps} aria-label={ariaLabel} viewBox="0 0 24 24"><path d="M20 19V3H4v16H2v2h20v-2h-2zm-10 0V5h4v14h-4z"/></svg>

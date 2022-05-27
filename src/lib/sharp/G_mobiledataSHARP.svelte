@@ -1,0 +1,1 @@
+<script>export let size="24"; export let color="currentColor";export let ariaLabel="g_mobiledata" </script><svg xmlns="http://www.w3.org/2000/svg"  width={size} height={size} fill={color} class={$$props.class} {...$$restProps} aria-label={ariaLabel} viewBox="0 0 24 24"><path d="M12 11v2h2v2H9V9h7V7H7v10h9v-6h-4z"/></svg>
