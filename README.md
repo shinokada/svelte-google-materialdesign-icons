@@ -21,7 +21,17 @@ In a svelte file:
 
 ```html
 <script>
-	import { HistoryFILLED, Heart_brokenOUTLINED, Heart_brokenFILLED, Heart_brokenSHARP, Heart_brokenROUND, AirplayROUND, AirplaySHARP, AirplayTWO_TONE, AirplayOUTLINED } from 'svelte-google-materialdesign-icons';
+	import {
+		HistoryFILLED,
+		Heart_brokenOUTLINED,
+		Heart_brokenFILLED,
+		Heart_brokenSHARP,
+		Heart_brokenROUND,
+		AirplayROUND,
+		AirplaySHARP,
+		AirplayTWO_TONE,
+		AirplayOUTLINED
+	} from 'svelte-google-materialdesign-icons';
 </script>
 
 <HistoryFILLED />
@@ -118,7 +128,7 @@ You can pass other attibutes as well.
 <script>
 	import { AirplayOUTLINED } from 'svelte-google-materialdesign-icons';
 	import { onMount } from 'svelte';
-  	const props = {
+	const props = {
 		size: '50',
 		color: '#ff0000'
 	};
@@ -140,7 +150,6 @@ Use `import * as Icon from 'svelte-google-materialdesign-icons`.
 <Icon.HistoryFILLED />
 <Icon.Heart_brokenOUTLINED />
 
-
 <h1>Size</h1>
 <Icon.HistoryFILLED size="50" />
 <Icon.Heart_brokenOUTLINED size="50" />
@@ -150,7 +159,7 @@ Use `import * as Icon from 'svelte-google-materialdesign-icons`.
 <Icon.Heart_brokenOUTLINED size="50" color="#3a7cff" />
 
 <h1>Tailwind CSS</h1>
-<Icon.HistoryFILLED size="50" class="text-pink-700"  />
+<Icon.HistoryFILLED size="50" class="text-pink-700" />
 <Icon.Heart_brokenOUTLINED size="50" class="text-blue-500" />
 ```
 
