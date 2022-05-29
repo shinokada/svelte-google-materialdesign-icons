@@ -1,4 +1,11 @@
-```html
+<script>
+	import * as Icon from 'svelte-google-materialdesign-icons';
+	const random_hex_color_code = () => {
+  let n = (Math.random() * 0xfffff * 1000000).toString(16);
+  return '#' + n.slice(0, 6);
+};
+	
+</script>
 <Icon.A10KFILLED size="40" color="{random_hex_color_code()}" />
 <Icon.A10MpFILLED size="40" color="{random_hex_color_code()}" />
 <Icon.A11MpFILLED size="40" color="{random_hex_color_code()}" />
@@ -6025,4 +6032,3 @@ Signal_wifi_statusbar_connected_no_internet_4RO<Icon.UND
 <Icon.Spatial_audio_offROUND size="40" color="{random_hex_color_code()}" />
 <Icon.Spatial_trackingROUND size="40" color="{random_hex_color_code()}" />
 <Icon.SpeakerROUND size="40" color="{random_hex_color_code()}" />
-```
