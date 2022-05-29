@@ -1692,8 +1692,14 @@
 <Icon.Signal_cellular_altFILLED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_alt_1_barFILLED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_alt_2_barFILLED size="40" color="{random_hex_color_code()}" />
-Signal_cellular_connected_no_internet_0_barFILL<Icon.ED size="40" color="{random_hex_color_code()}" />
-Signal_cellular_connected_no_internet_4_barFILL<Icon.ED size="40" color="{random_hex_color_code()}" />
+Signal_cellular_connected_no_internet_0_barFILL<Icon.ED
+	size="40"
+	color="{random_hex_color_code()}"
+/>
+Signal_cellular_connected_no_internet_4_barFILL<Icon.ED
+	size="40"
+	color="{random_hex_color_code()}"
+/>
 <Icon.Signal_cellular_no_simFILLED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_nodataFILLED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_nullFILLED size="40" color="{random_hex_color_code()}" />
@@ -1705,7 +1711,10 @@ Signal_cellular_connected_no_internet_4_barFILL<Icon.ED size="40" color="{random
 <Icon.Signal_wifi_connected_no_internet_4FILLED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_wifi_offFILLED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_wifi_statusbar_4_barFILLED size="40" color="{random_hex_color_code()}" />
-Signal_wifi_statusbar_connected_no_internet_4FI<Icon.LLED size="40" color="{random_hex_color_code()}" />
+Signal_wifi_statusbar_connected_no_internet_4FI<Icon.LLED
+	size="40"
+	color="{random_hex_color_code()}"
+/>
 <Icon.Signal_wifi_statusbar_nullFILLED size="40" color="{random_hex_color_code()}" />
 <Icon.SignpostFILLED size="40" color="{random_hex_color_code()}" />
 <Icon.Sim_cardFILLED size="40" color="{random_hex_color_code()}" />
@@ -3815,8 +3824,14 @@ Signal_wifi_statusbar_connected_no_internet_4FI<Icon.LLED size="40" color="{rand
 <Icon.Signal_cellular_altOUTLINED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_alt_1_barOUTLINED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_alt_2_barOUTLINED size="40" color="{random_hex_color_code()}" />
-Signal_cellular_connected_no_internet_0_barOUTL<Icon.INED size="40" color="{random_hex_color_code()}" />
-Signal_cellular_connected_no_internet_4_barOUTL<Icon.INED size="40" color="{random_hex_color_code()}" />
+Signal_cellular_connected_no_internet_0_barOUTL<Icon.INED
+	size="40"
+	color="{random_hex_color_code()}"
+/>
+Signal_cellular_connected_no_internet_4_barOUTL<Icon.INED
+	size="40"
+	color="{random_hex_color_code()}"
+/>
 <Icon.Signal_cellular_no_simOUTLINED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_nodataOUTLINED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_nullOUTLINED size="40" color="{random_hex_color_code()}" />
@@ -3828,7 +3843,10 @@ Signal_cellular_connected_no_internet_4_barOUTL<Icon.INED size="40" color="{rand
 <Icon.Signal_wifi_connected_no_internet_4OUTLINED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_wifi_offOUTLINED size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_wifi_statusbar_4_barOUTLINED size="40" color="{random_hex_color_code()}" />
-Signal_wifi_statusbar_connected_no_internet_4OU<Icon.TLINED size="40" color="{random_hex_color_code()}" />
+Signal_wifi_statusbar_connected_no_internet_4OU<Icon.TLINED
+	size="40"
+	color="{random_hex_color_code()}"
+/>
 <Icon.Signal_wifi_statusbar_nullOUTLINED size="40" color="{random_hex_color_code()}" />
 <Icon.SignpostOUTLINED size="40" color="{random_hex_color_code()}" />
 <Icon.Sim_cardOUTLINED size="40" color="{random_hex_color_code()}" />
@@ -5938,8 +5956,14 @@ Signal_wifi_statusbar_connected_no_internet_4OU<Icon.TLINED size="40" color="{ra
 <Icon.Signal_cellular_altROUND size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_alt_1_barROUND size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_alt_2_barROUND size="40" color="{random_hex_color_code()}" />
-Signal_cellular_connected_no_internet_0_barROUN<Icon.D size="40" color="{random_hex_color_code()}" />
-Signal_cellular_connected_no_internet_4_barROUN<Icon.D size="40" color="{random_hex_color_code()}" />
+Signal_cellular_connected_no_internet_0_barROUN<Icon.D
+	size="40"
+	color="{random_hex_color_code()}"
+/>
+Signal_cellular_connected_no_internet_4_barROUN<Icon.D
+	size="40"
+	color="{random_hex_color_code()}"
+/>
 <Icon.Signal_cellular_no_simROUND size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_nodataROUND size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_cellular_nullROUND size="40" color="{random_hex_color_code()}" />
@@ -5951,7 +5975,10 @@ Signal_cellular_connected_no_internet_4_barROUN<Icon.D size="40" color="{random_
 <Icon.Signal_wifi_connected_no_internet_4ROUND size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_wifi_offROUND size="40" color="{random_hex_color_code()}" />
 <Icon.Signal_wifi_statusbar_4_barROUND size="40" color="{random_hex_color_code()}" />
-Signal_wifi_statusbar_connected_no_internet_4RO<Icon.UND size="40" color="{random_hex_color_code()}" />
+Signal_wifi_statusbar_connected_no_internet_4RO<Icon.UND
+	size="40"
+	color="{random_hex_color_code()}"
+/>
 <Icon.Signal_wifi_statusbar_nullROUND size="40" color="{random_hex_color_code()}" />
 <Icon.SignpostROUND size="40" color="{random_hex_color_code()}" />
 <Icon.Sim_cardROUND size="40" color="{random_hex_color_code()}" />
