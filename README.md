@@ -30,29 +30,29 @@ In a svelte file:
 
 ```html
 <script>
-	import {
-		HistoryFILLED,
-		Heart_brokenOUTLINED,
-		Heart_brokenFILLED,
-		Heart_brokenSHARP,
-		Heart_brokenROUND,
-		AirplayROUND,
-		AirplaySHARP,
-		AirplayTWO_TONE,
-		AirplayOUTLINED
-	} from 'svelte-google-materialdesign-icons';
+	import { Hiking, Double_arrow, Javascript } from 'svelte-google-materialdesign-icons';
 </script>
 
-<HistoryFILLED />
-<Heart_brokenOUTLINED />
-<Heart_brokenFILLED />
-<Heart_brokenSHARP />
-<Heart_brokenROUND />
-<Heart_brokenTWO_TONE />
-<AirplayROUND />
-<AirplaySHARP />
-<AirplayTWO_TONE />
-<AirplayOUTLINED />
+<Hiking />
+<Double_arrow />
+<Javascript />
+```
+
+## Props
+
+| Name                                                           | Default   |
+| -------------------------------------------------------------- | --------- |
+| size                                                           | 24        |
+| class                                                          |           |
+| ariaLabel                                                      | file name |
+| variation ('filled', 'outlined', 'round', 'sharp', 'two-tone') | outlined  |
+
+## Variation
+
+The default variation value is outline. Use the `variation` prop to change it to solid.
+
+```html
+<Hiking variation="two-tone" />
 ```
 
 ## Size
@@ -60,12 +60,9 @@ In a svelte file:
 Use the `size` prop to change the size of icons.
 
 ```html
-<HistoryFILLED size="50" />
-<Heart_brokenOUTLINED size="50" />
-<Heart_brokenFILLED size="50" />
-<Heart_brokenSHARP size="50" />
-<Heart_brokenROUND size="50" />
-<Heart_brokenTWO_TONE size="50" />
+<Hiking size="30" />
+<Double_arrow size="40" />
+<Javascript size="50" />
 ```
 
 ## CSS HEX Colors
@@ -73,9 +70,9 @@ Use the `size` prop to change the size of icons.
 Use the `color` prop to change colors with HEX color code.
 
 ```html
-<HistoryFILLED size="50" color="#ff0000" />
-<Heart_brokenOUTLINED size="50" color="#3a7cff" />
-<Heart_brokenFILLED size="50" color="#3fe537" />
+<Hiking size="50" color="#ff0000" />
+<Double_arrow size="50" color="#3a7cff" />
+<Javascript size="50" color="#3fe537" />
 ```
 
 ## CSS framworks suport
@@ -85,13 +82,13 @@ Use the `class` prop to change size, colors and add additional css.
 Tailwind CSS example:
 
 ```html
-<AirplayOUTLINED class="h-24 w-24 text-blue-700 mr-4" />
+<Hiking class="h-24 w-24 text-blue-700 mr-4" />
 ```
 
 Bootstrap examples:
 
 ```html
-<AirplayOUTLINED class="position-absolute top-0 px-1" />
+<Hiking class="position-absolute top-0 px-1" />
 ```
 
 ## Dark mode
@@ -101,16 +98,16 @@ If you are using the dark mode on your website with Tailwind CSS, add your dark 
 Let's use `dark` for the dark mode class as an example.
 
 ```html
-<AirplayOUTLINED class="text-blue-700 dark:text-red-500" />
+<Hiking class="text-blue-700 dark:text-red-500" />
 ```
 
 ## aria-label
 
-All icons have aria-label. For example `AirplayOUTLINED` has `aria-label="airplay"`.
+All icons have aria-label. For example `Hiking` has `aria-label="hiking"`.
 Use `ariaLabel` prop to modify the `aria-label` value.
 
 ```html
-<AirplayOUTLINED ariaLabel="Airplay outlined" />
+<Hiking ariaLabel="Hiking icon" />
 ```
 
 ## Passing down other attributes
@@ -118,31 +115,31 @@ Use `ariaLabel` prop to modify the `aria-label` value.
 You can pass other attibutes as well.
 
 ```html
-<AirplayOUTLINED tabindex="0" />
+<Hiking tabindex="0" />
 ```
 
 ## Using svelte:component
 
 ```html
 <script>
-	import { AirplayOUTLINED } from 'svelte-google-materialdesign-icons';
+	import { Hiking } from 'svelte-google-materialdesign-icons';
 </script>
 
-<svelte:component this="{AirplayOUTLINED}" />
+<svelte:component this="{Hiking}" />
 ```
 
 ## Using onMount
 
 ```html
 <script>
-	import { AirplayOUTLINED } from 'svelte-google-materialdesign-icons';
+	import { Hiking } from 'svelte-google-materialdesign-icons';
 	import { onMount } from 'svelte';
 	const props = {
 		size: '50',
 		color: '#ff0000'
 	};
 	onMount(() => {
-		const icon = new AirplayOUTLINED({ target: document.body, props });
+		const icon = new Hiking({ target: document.body, props });
 	});
 </script>
 ```
@@ -156,20 +153,20 @@ Use `import * as Icon from 'svelte-google-materialdesign-icons`.
 	import * as Icon from 'svelte-google-materialdesign-icons';
 </script>
 
-<Icon.HistoryFILLED />
-<Icon.Heart_brokenOUTLINED />
+<Icon.Hiking />
+<Icon.Double_arrow />
 
 <h1>Size</h1>
-<Icon.HistoryFILLED size="50" />
-<Icon.Heart_brokenOUTLINED size="50" />
+<Icon.Hiking size="50" />
+<Icon.Double_arrow size="50" />
 
 <h1>CSS HEX color</h1>
-<Icon.HistoryFILLED size="50" color="#ff0000" />
-<Icon.Heart_brokenOUTLINED size="50" color="#3a7cff" />
+<Icon.Hiking size="50" color="#ff0000" />
+<Icon.Double_arrow size="50" color="#3a7cff" />
 
 <h1>Tailwind CSS</h1>
-<Icon.HistoryFILLED size="50" class="text-pink-700" />
-<Icon.Heart_brokenOUTLINED size="50" class="text-blue-500" />
+<Icon.Hiking size="50" class="text-pink-700" />
+<Icon.Double_arrow size="50" class="text-blue-500" />
 ```
 
 ## Other icons

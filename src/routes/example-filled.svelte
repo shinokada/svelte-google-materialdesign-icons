@@ -5,6 +5,7 @@
 		return '#' + n.slice(0, 6);
 	};
 </script>
+
 <h1>Filled</h1>
 <Icon.A10K size="40" color={random_hex_color_code()} variation="filled" />
 <Icon.A10Mp size="40" color={random_hex_color_code()} variation="filled" />
