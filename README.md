@@ -39,12 +39,12 @@ In a svelte file:
 
 ## Props
 
-| Name                                                           | Default   |
-| -------------------------------------------------------------- | --------- |
-| size                                                           | 24        |
-| class                                                          |           |
-| ariaLabel                                                      | file name |
-| variation ('filled', 'outlined', 'round', 'sharp', 'two-tone') | outlined  |
+| Name                                                 | Default   |
+| ---------------------------------------------------- | --------- |
+| size                                                 | 24        |
+| class                                                |           |
+| ariaLabel                                            | file name |
+| variation (filled, outlined, round, sharp, two-tone) | outlined  |
 
 ## Variation
 
