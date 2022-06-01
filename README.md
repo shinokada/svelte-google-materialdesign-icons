@@ -5,6 +5,15 @@
 
 10600+ SVG Google Materialdesign icon components for Svelte. Icons support major CSS frameworks using the `class` props.
 
+<p align="center">
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material1.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material2.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material3.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material4.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material5.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material6.webp" />
+</p>
+
 ## Icon name list
 
 [Icon list](https://github.com/shinokada/svelte-google-materialdesign-icons/blob/main/icon-list.md)
