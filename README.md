@@ -11,7 +11,6 @@
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material3.webp" />
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material4.webp" />
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material5.webp" />
-<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material6.webp" />
 </p>
 
 ## Icon name list
