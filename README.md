@@ -17,6 +17,17 @@
 
 [Icon list](https://github.com/shinokada/svelte-google-materialdesign-icons/blob/main/icon-list.md)
 
+Since a component name can't be started with a number, if a SVG file name starts with a number, `A` is prefixed.
+For example, `30fps_select.svg` will be named as `A30fps_select.svelte`.
+
+## Orignal SVG icons
+
+[marella/material-design-icons](https://github.com/marella/material-design-icons/tree/main/svg/filled)
+
+## Icon finder
+
+You can find icon images at [Google Fonts](https://fonts.google.com/icons?selected=Material+Icons)
+
 ## Installation
 
 ```sh
