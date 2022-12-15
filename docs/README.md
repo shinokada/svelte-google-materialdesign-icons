@@ -1,7 +1,15 @@
-# Svelte-Google-Materialdesign-Icons
+<h1 align="center">Svelte-Google-Materialdesign-Icons</h1>
 
-[![npm version](https://badgen.net/npm/v/svelte-google-materialdesign-icons)](https://www.npmjs.com/package/svelte-google-materialdesign-icons)
-[![license](https://badgen.net/npm/license/svelte-google-materialdesign-icons)](https://github.com/shinokada/svelte-google-materialdesign-icons/blob/main/LICENSE)
+<p align="center">
+<a href="https://shinokada.github.io/svelte-google-materialdesign-icons/">Svelte-Google-Materialdesign-Icons</a>
+</p>
+
+<p align="center">
+<a href="https://www.npmjs.com/package/svelte-google-materialdesign-icons" rel="nofollow"><img src="https://img.shields.io/npm/v/svelte-google-materialdesign-icons" alt="npm"></a>
+<a href="https://twitter.com/shinokada" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-@shinokada-4BBAAB.svg" alt="Created by Shin Okada"></a>
+<a href="http://www.apache.org/licenses/" rel="nofollow"><img src="https://img.shields.io/github/license/shinokada/svelte-google-materialdesign-icons" alt="License"></a>
+<a href="https://www.npmjs.com/package/svelte-google-materialdesign-icons" rel="nofollow"><img src="https://img.shields.io/npm/dw/svelte-google-materialdesign-icons.svg" alt="npm"></a>
+</p>
 
 10600+ SVG Google Materialdesign icon components for Svelte. Icons support major CSS frameworks using the `class` props.
 
