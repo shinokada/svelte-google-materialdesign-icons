@@ -27,7 +27,6 @@
 npm i -D svelte-google-materialdesign-icons
 ```
 
-
 ## Icon name list
 
 [Icon list](https://github.com/shinokada/svelte-google-materialdesign-icons/blob/main/icon-list.md)
@@ -41,7 +40,7 @@ In a svelte file:
 
 ```html
 <script>
-	import { Hiking, Double_arrow, Javascript } from 'svelte-google-materialdesign-icons';
+  import { Hiking, Double_arrow, Javascript } from 'svelte-google-materialdesign-icons';
 </script>
 
 <Hiking />
@@ -133,7 +132,7 @@ You can pass other attibutes as well.
 
 ```html
 <script>
-	import { Hiking } from 'svelte-google-materialdesign-icons';
+  import { Hiking } from 'svelte-google-materialdesign-icons';
 </script>
 
 <svelte:component this="{Hiking}" />
@@ -143,15 +142,15 @@ You can pass other attibutes as well.
 
 ```html
 <script>
-	import { Hiking } from 'svelte-google-materialdesign-icons';
-	import { onMount } from 'svelte';
-	const props = {
-		size: '50',
-		color: '#ff0000'
-	};
-	onMount(() => {
-		const icon = new Hiking({ target: document.body, props });
-	});
+  import { Hiking } from 'svelte-google-materialdesign-icons';
+  import { onMount } from 'svelte';
+  const props = {
+    size: '50',
+    color: '#ff0000'
+  };
+  onMount(() => {
+    const icon = new Hiking({ target: document.body, props });
+  });
 </script>
 ```
 
@@ -161,7 +160,7 @@ Use `import * as Icon from 'svelte-google-materialdesign-icons`.
 
 ```html
 <script>
-	import * as Icon from 'svelte-google-materialdesign-icons';
+  import * as Icon from 'svelte-google-materialdesign-icons';
 </script>
 
 <Icon.Hiking />
@@ -179,7 +178,6 @@ Use `import * as Icon from 'svelte-google-materialdesign-icons`.
 <Icon.Hiking size="50" class="text-pink-700" />
 <Icon.Double_arrow size="50" class="text-blue-500" />
 ```
-
 
 ## Orignal SVG icons
 
