@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.7](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.2.6...v0.2.7) (2022-12-16)
+
+
+### Bug Fixes
+
+* move files from docs to root since npmjs does not show README. Update sveltekit ([9296693](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/9296693040dac72245244a1c484f975a78b5a219))
+
 ### [0.2.6](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.2.5...v0.2.6) (2022-12-15)
 
 ### Features
