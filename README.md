@@ -1,7 +1,7 @@
 <h1 align="center">Svelte-Google-Materialdesign-Icons</h1>
 
 <p align="center">
-<a href="https://shinokada.github.io/svelte-google-materialdesign-icons/">Svelte-Google-Materialdesign-Icons</a>
+<a href="https://svelte-google-materialdesign-icons.codewithshin.com/">Svelte-Google-Materialdesign-Icons</a>
 </p>
 
 <p align="center">
