@@ -1,4 +1,4 @@
-<h1 align="center">Svelte-Google-Materialdesign-Icons</h1>
+<h1 align="center">Svelte Google Materialdesign Icons</h1>
 
 <p align="center">
 <a href="https://svelte-google-materialdesign-icons.codewithshin.com/">Svelte-Google-Materialdesign-Icons</a>
