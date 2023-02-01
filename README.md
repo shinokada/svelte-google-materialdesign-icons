@@ -12,14 +12,10 @@
 <a href="https://www.npmjs.com/package/svelte-google-materialdesign-icons" rel="nofollow"><img src="https://img.shields.io/npm/dw/svelte-google-materialdesign-icons.svg" alt="npm"></a>
 </p>
 
-10600+ SVG Google Materialdesign icon components for Svelte. Icons support major CSS frameworks using the `class` props.
+10600+ SVG Google Materialdesign icon components for Svelte. Icons support major CSS frameworks using the `class` props. There are five types, filled, outlined, round, sharp, and two-tone.
 
 <p align="center">
-<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material1.webp" />
-<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material2.webp" />
-<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material3.webp" />
-<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material4.webp" />
-<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-google-materialdesign-icons/main/static/images/google-material5.webp" />
+<img width="650" src="/static/images/google-outlined-optimized-650-1050.png" />
 </p>
 
 ## Installation
@@ -28,9 +24,13 @@
 npm i -D svelte-google-materialdesign-icons
 ```
 
-## Icon name list
+## Icon names
 
 [Icon list](/icon-list.md)
+
+## Icon images
+
+[Icon images](/icon-images.md)
 
 Since a component name can't be started with a number, if a SVG file name starts with a number, `A` is prefixed.
 For example, `30fps_select.svg` will be named as `A30fps_select.svelte`.
