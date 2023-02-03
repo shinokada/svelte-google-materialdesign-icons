@@ -1,39 +1,34 @@
 <script lang="ts">
-  export let size = '24';
-  export let color = 'currentColor';
-  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
+  export let size = "24";
+  export let color="currentColor";
+  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
   let svgpath: string;
-  let svgfilled =
-    '<path d="M6 10h3v10H6zm0-5h3v4H6zm10 11h3v4h-3zm0-3h3v2h-3zm-5 0h3v7h-3zm0-4h3v3h-3z"/>';
-  let svgoutlined =
-    '<path d="M6 10h3v10H6V10zm0-5h3v4H6V5zm10 11h3v4h-3v-4zm0-3h3v2h-3v-2zm-5 0h3v7h-3v-7zm0-4h3v3h-3V9z"/>';
-  let svground =
-    '<path d="M6 10h3v8.5c0 .83-.67 1.5-1.5 1.5S6 19.33 6 18.5V10zm1.5-5C8.33 5 9 5.67 9 6.5V9H6V6.5C6 5.67 6.67 5 7.5 5zM16 16h3v2.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5V16zm-5-3h3v5.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5V13zm1.5-4c.83 0 1.5.67 1.5 1.5V12h-3v-1.5c0-.83.67-1.5 1.5-1.5zm6.5 6h-3v-.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v.5z"/>';
-  let svgsharp =
-    '<path d="M6 10h3v10H6V10zm0-5h3v4H6V5zm10 11h3v4h-3v-4zm0-3h3v2h-3v-2zm-5 0h3v7h-3v-7zm0-4h3v3h-3V9z"/>';
-  let svgtwotone =
-    '<path d="M6 10h3v10H6V10zm0-5h3v4H6V5zm10 11h3v4h-3v-4zm0-3h3v2h-3v-2zm-5 0h3v7h-3v-7zm0-4h3v3h-3V9z"/>';
+  let svgfilled = '<path d="M4 9h4v11H4zm0-5h4v4H4zm6 3h4v4h-4zm6 3h4v4h-4zm0 5h4v5h-4zm-6-3h4v8h-4z"/>';
+  let svgoutlined = '<path d="M4 9h4v11H4zm0-5h4v4H4zm6 3h4v4h-4zm6 3h4v4h-4zm0 5h4v5h-4zm-6-3h4v8h-4z"/>';
+  let svground = '<path d="M6 20c1.1 0 2-.9 2-2V9H4v9c0 1.1.9 2 2 2zM4 8h4V6c0-1.1-.9-2-2-2s-2 .9-2 2v2zm6 3h4V9c0-1.1-.9-2-2-2s-2 .9-2 2v2zm6 1v2h4v-2c0-1.1-.9-2-2-2s-2 .9-2 2zm2 8c1.1 0 2-.9 2-2v-3h-4v3c0 1.1.9 2 2 2zm-6 0c1.1 0 2-.9 2-2v-6h-4v6c0 1.1.9 2 2 2z"/>';
+  let svgsharp = '<path d="M4 9h4v11H4zm0-5h4v4H4zm6 3h4v4h-4zm6 3h4v4h-4zm0 5h4v5h-4zm-6-3h4v8h-4z"/>';
+  let svgtwotone = '<path d="M4 9h4v11H4zm0-5h4v4H4zm6 3h4v4h-4zm6 3h4v4h-4zm0 5h4v5h-4zm-6-3h4v8h-4z"/>';
   switch (variation) {
-    case 'filled':
+    case "filled":
       svgpath = svgfilled;
       break;
-    case 'outlined':
+    case "outlined":
       svgpath = svgoutlined;
       break;
-    case 'round':
+    case "round":
       svgpath = svground;
       break;
-    case 'sharp':
+    case "sharp":
       svgpath = svgsharp;
       break;
-    case 'two-tone':
+    case "two-tone":
       svgpath = svgtwotone;
       break;
     default:
       svgpath = svgoutlined;
   }
-  export let ariaLabel = 'stacked bar chart';
-</script>
+export let ariaLabel="stacked bar chart";
+ </script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"

@@ -1,39 +1,34 @@
 <script lang="ts">
-  export let size = '24';
-  export let color = 'currentColor';
-  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
+  export let size = "24";
+  export let color="currentColor";
+  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
   let svgpath: string;
-  let svgfilled =
-    '<path d="m18 22-.01-6L14 12l3.99-4.01L18 2H6v6l4 4-4 3.99V22h12zM8 7.5V4h8v3.5l-4 4-4-4z"/>';
-  let svgoutlined =
-    '<path d="m18 22-.01-6L14 12l3.99-4.01L18 2H6v6l4 4-4 3.99V22h12zM8 7.5V4h8v3.5l-4 4-4-4z"/>';
-  let svground =
-    '<path d="M16 22c1.1 0 2-.9 2-2l-.01-3.18c0-.53-.21-1.03-.58-1.41L14 12l3.41-3.43c.37-.37.58-.88.58-1.41L18 4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v3.16c0 .53.21 1.04.58 1.42L10 12l-3.41 3.4c-.38.38-.59.89-.59 1.42V20c0 1.1.9 2 2 2h8zM8 7.09V5c0-.55.45-1 1-1h6c.55 0 1 .45 1 1v2.09c0 .27-.11.52-.29.71L12 11.5 8.29 7.79c-.18-.18-.29-.44-.29-.7z"/>';
-  let svgsharp =
-    '<path d="m18 22-.01-6L14 12l3.99-4.01L18 2H6v6l4 4-4 3.99V22h12zM8 7.5V4h8v3.5l-4 4-4-4z"/>';
-  let svgtwotone =
-    '<path d="m16 16.5-4-4-4 4V20h8z" opacity=".3"/><path d="m16 16.5-4-4-4 4V20h8z" opacity=".3"/><path d="M6 22h12v-6l-4-4 3.99-4.01L18 2H6l.01 5.99L10 12l-4 3.99V22zM8 7.5V4h8v3.5l-4 4-4-4zm0 9 4-4 4 4V20H8v-3.5z"/>';
+  let svgfilled = '<path d="m18 22-.01-6L14 12l3.99-4.01L18 2H6v6l4 4-4 3.99V22h12zM8 7.5V4h8v3.5l-4 4-4-4z"/>';
+  let svgoutlined = '<path d="m18 22-.01-6L14 12l3.99-4.01L18 2H6v6l4 4-4 3.99V22h12zM8 7.5V4h8v3.5l-4 4-4-4z"/>';
+  let svground = '<path d="M16 22c1.1 0 2-.9 2-2l-.01-3.18c0-.53-.21-1.03-.58-1.41L14 12l3.41-3.43c.37-.37.58-.88.58-1.41L18 4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v3.16c0 .53.21 1.04.58 1.42L10 12l-3.41 3.4c-.38.38-.59.89-.59 1.42V20c0 1.1.9 2 2 2h8zM8 7.09V5c0-.55.45-1 1-1h6c.55 0 1 .45 1 1v2.09c0 .27-.11.52-.29.71L12 11.5 8.29 7.79c-.18-.18-.29-.44-.29-.7z"/>';
+  let svgsharp = '<path d="m18 22-.01-6L14 12l3.99-4.01L18 2H6v6l4 4-4 3.99V22h12zM8 7.5V4h8v3.5l-4 4-4-4z"/>';
+  let svgtwotone = '<path d="m16 16.5-4-4-4 4V20h8z" opacity=".3"/><path d="m16 16.5-4-4-4 4V20h8z" opacity=".3"/><path d="M6 22h12v-6l-4-4 3.99-4.01L18 2H6l.01 5.99L10 12l-4 3.99V22zM8 7.5V4h8v3.5l-4 4-4-4zm0 9 4-4 4 4V20H8v-3.5z"/>';
   switch (variation) {
-    case 'filled':
+    case "filled":
       svgpath = svgfilled;
       break;
-    case 'outlined':
+    case "outlined":
       svgpath = svgoutlined;
       break;
-    case 'round':
+    case "round":
       svgpath = svground;
       break;
-    case 'sharp':
+    case "sharp":
       svgpath = svgsharp;
       break;
-    case 'two-tone':
+    case "two-tone":
       svgpath = svgtwotone;
       break;
     default:
       svgpath = svgoutlined;
   }
-  export let ariaLabel = 'hourglass bottom';
-</script>
+export let ariaLabel="hourglass bottom";
+ </script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"

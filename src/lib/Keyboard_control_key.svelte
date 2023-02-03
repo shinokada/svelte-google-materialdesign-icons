@@ -1,35 +1,34 @@
 <script lang="ts">
-  export let size = '24';
-  export let color = 'currentColor';
-  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
+  export let size = "24";
+  export let color="currentColor";
+  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
   let svgpath: string;
   let svgfilled = '<path d="m5 12 1.41 1.41L12 7.83l5.59 5.58L19 12l-7-7z"/>';
   let svgoutlined = '<path d="m5 12 1.41 1.41L12 7.83l5.59 5.58L19 12l-7-7z"/>';
-  let svground =
-    '<path d="M5.71 12.71c.39.39 1.02.39 1.41 0L12 7.83l4.88 4.88a.996.996 0 1 0 1.41-1.41L12.7 5.71a.996.996 0 0 0-1.41 0L5.7 11.3c-.38.38-.38 1.02.01 1.41z"/>';
+  let svground = '<path d="M5.71 12.71c.39.39 1.02.39 1.41 0L12 7.83l4.88 4.88a.996.996 0 1 0 1.41-1.41L12.7 5.71a.996.996 0 0 0-1.41 0L5.7 11.3c-.38.38-.38 1.02.01 1.41z"/>';
   let svgsharp = '<path d="m5 12 1.41 1.41L12 7.83l5.59 5.58L19 12l-7-7z"/>';
   let svgtwotone = '<path d="m5 12 1.41 1.41L12 7.83l5.59 5.58L19 12l-7-7z"/>';
   switch (variation) {
-    case 'filled':
+    case "filled":
       svgpath = svgfilled;
       break;
-    case 'outlined':
+    case "outlined":
       svgpath = svgoutlined;
       break;
-    case 'round':
+    case "round":
       svgpath = svground;
       break;
-    case 'sharp':
+    case "sharp":
       svgpath = svgsharp;
       break;
-    case 'two-tone':
+    case "two-tone":
       svgpath = svgtwotone;
       break;
     default:
       svgpath = svgoutlined;
   }
-  export let ariaLabel = 'keyboard control key';
-</script>
+export let ariaLabel="keyboard control key";
+ </script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"

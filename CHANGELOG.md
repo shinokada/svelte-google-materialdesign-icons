@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.2.11](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.2.10...v0.2.11) (2023-02-01)
 
-
 ### Bug Fixes
 
-* badges target, height, and add links to crossOriginLinks ([61ddf59](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/61ddf59a8290204262c07538fcc66ab1f2cf6d29))
+- badges target, height, and add links to crossOriginLinks ([61ddf59](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/61ddf59a8290204262c07538fcc66ab1f2cf6d29))
 
 ### [0.2.10](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.2.9...v0.2.10) (2023-02-01)
 

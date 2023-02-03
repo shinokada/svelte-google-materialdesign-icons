@@ -1393,7 +1393,6 @@
 - Phone_disabled
 - Phone_enabled
 - Phone_forwarded
-- Phone_in_talk
 - Phone_iphone
 - Phone_locked
 - Phone_missed
@@ -2005,6 +2004,7 @@
 - Video_call
 - Video_camera_back
 - Video_camera_front
+- Video_chat
 - Video_file
 - Video_label
 - Video_library
@@ -2081,7 +2081,6 @@
 - Webhook
 - Weekend
 - West
-- Whatsapp
 - Whatshot
 - Wheelchair_pickup
 - Where_to_vote
@@ -2123,3 +2122,7 @@
 - Zoom_in_map
 - Zoom_out
 - Zoom_out_map
+
+## Back to Home
+
+[Back to Home](/)

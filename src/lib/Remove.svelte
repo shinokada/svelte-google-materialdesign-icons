@@ -1,7 +1,7 @@
 <script lang="ts">
-  export let size = '24';
-  export let color = 'currentColor';
-  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
+  export let size = "24";
+  export let color="currentColor";
+  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
   let svgpath: string;
   let svgfilled = '<path d="M19 13H5v-2h14v2z"/>';
   let svgoutlined = '<path d="M19 13H5v-2h14v2z"/>';
@@ -9,26 +9,26 @@
   let svgsharp = '<path d="M19 13H5v-2h14v2z"/>';
   let svgtwotone = '<path d="M19 13H5v-2h14v2z"/>';
   switch (variation) {
-    case 'filled':
+    case "filled":
       svgpath = svgfilled;
       break;
-    case 'outlined':
+    case "outlined":
       svgpath = svgoutlined;
       break;
-    case 'round':
+    case "round":
       svgpath = svground;
       break;
-    case 'sharp':
+    case "sharp":
       svgpath = svgsharp;
       break;
-    case 'two-tone':
+    case "two-tone":
       svgpath = svgtwotone;
       break;
     default:
       svgpath = svgoutlined;
   }
-  export let ariaLabel = 'remove';
-</script>
+export let ariaLabel="remove";
+ </script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
