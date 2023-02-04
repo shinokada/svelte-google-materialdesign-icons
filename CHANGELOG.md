@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.2.12](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.2.11...v0.2.12) (2023-02-03)
 
-
 ### Bug Fixes
 
-* icon-list1.md ([4d64797](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/4d64797b6335820e0a449c82a35512741cc0611e))
+- icon-list1.md ([4d64797](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/4d64797b6335820e0a449c82a35512741cc0611e))
 
 ### [0.2.11](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.2.10...v0.2.11) (2023-02-01)
 

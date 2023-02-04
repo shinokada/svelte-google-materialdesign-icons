@@ -118,7 +118,11 @@
 <Icon.Air size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Airline_seat_flat size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Airline_seat_flat_angled size="40" color={random_hex_color_code()} variation="two-tone" />
-<Icon.Airline_seat_individual_suite size="40" color={random_hex_color_code()} variation="two-tone" />
+<Icon.Airline_seat_individual_suite
+  size="40"
+  color={random_hex_color_code()}
+  variation="two-tone"
+/>
 <Icon.Airline_seat_legroom_extra size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Airline_seat_legroom_normal size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Airline_seat_legroom_reduced size="40" color={random_hex_color_code()} variation="two-tone" />
@@ -590,7 +594,11 @@
 <Icon.Do_not_disturb_alt size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Do_not_disturb_off size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Do_not_disturb_on size="40" color={random_hex_color_code()} variation="two-tone" />
-<Icon.Do_not_disturb_on_total_silence size="40" color={random_hex_color_code()} variation="two-tone" />
+<Icon.Do_not_disturb_on_total_silence
+  size="40"
+  color={random_hex_color_code()}
+  variation="two-tone"
+/>
 <Icon.Do_not_step size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Do_not_touch size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Dock size="40" color={random_hex_color_code()} variation="two-tone" />
@@ -1700,8 +1708,16 @@
 <Icon.Signal_cellular_alt size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Signal_cellular_alt_1_bar size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Signal_cellular_alt_2_bar size="40" color={random_hex_color_code()} variation="two-tone" />
-<Icon.Signal_cellular_connected_no_internet_0_bar size="40" color={random_hex_color_code()} variation="two-tone" />
-<Icon.Signal_cellular_connected_no_internet_4_bar size="40" color={random_hex_color_code()} variation="two-tone" />
+<Icon.Signal_cellular_connected_no_internet_0_bar
+  size="40"
+  color={random_hex_color_code()}
+  variation="two-tone"
+/>
+<Icon.Signal_cellular_connected_no_internet_4_bar
+  size="40"
+  color={random_hex_color_code()}
+  variation="two-tone"
+/>
 <Icon.Signal_cellular_no_sim size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Signal_cellular_nodata size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Signal_cellular_null size="40" color={random_hex_color_code()} variation="two-tone" />
@@ -1710,10 +1726,18 @@
 <Icon.Signal_wifi_4_bar size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Signal_wifi_4_bar_lock size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Signal_wifi_bad size="40" color={random_hex_color_code()} variation="two-tone" />
-<Icon.Signal_wifi_connected_no_internet_4 size="40" color={random_hex_color_code()} variation="two-tone" />
+<Icon.Signal_wifi_connected_no_internet_4
+  size="40"
+  color={random_hex_color_code()}
+  variation="two-tone"
+/>
 <Icon.Signal_wifi_off size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Signal_wifi_statusbar_4_bar size="40" color={random_hex_color_code()} variation="two-tone" />
-<Icon.Signal_wifi_statusbar_connected_no_internet_4 size="40" color={random_hex_color_code()} variation="two-tone" />
+<Icon.Signal_wifi_statusbar_connected_no_internet_4
+  size="40"
+  color={random_hex_color_code()}
+  variation="two-tone"
+/>
 <Icon.Signal_wifi_statusbar_null size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Signpost size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Sim_card size="40" color={random_hex_color_code()} variation="two-tone" />
@@ -1870,7 +1894,11 @@
 <Icon.Sync_problem size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.System_security_update size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.System_security_update_good size="40" color={random_hex_color_code()} variation="two-tone" />
-<Icon.System_security_update_warning size="40" color={random_hex_color_code()} variation="two-tone" />
+<Icon.System_security_update_warning
+  size="40"
+  color={random_hex_color_code()}
+  variation="two-tone"
+/>
 <Icon.System_update size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.System_update_alt size="40" color={random_hex_color_code()} variation="two-tone" />
 <Icon.Tab size="40" color={random_hex_color_code()} variation="two-tone" />

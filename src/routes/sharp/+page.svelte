@@ -1700,8 +1700,16 @@
 <Icon.Signal_cellular_alt size="40" color={random_hex_color_code()} variation="sharp" />
 <Icon.Signal_cellular_alt_1_bar size="40" color={random_hex_color_code()} variation="sharp" />
 <Icon.Signal_cellular_alt_2_bar size="40" color={random_hex_color_code()} variation="sharp" />
-<Icon.Signal_cellular_connected_no_internet_0_bar size="40" color={random_hex_color_code()} variation="sharp" />
-<Icon.Signal_cellular_connected_no_internet_4_bar size="40" color={random_hex_color_code()} variation="sharp" />
+<Icon.Signal_cellular_connected_no_internet_0_bar
+  size="40"
+  color={random_hex_color_code()}
+  variation="sharp"
+/>
+<Icon.Signal_cellular_connected_no_internet_4_bar
+  size="40"
+  color={random_hex_color_code()}
+  variation="sharp"
+/>
 <Icon.Signal_cellular_no_sim size="40" color={random_hex_color_code()} variation="sharp" />
 <Icon.Signal_cellular_nodata size="40" color={random_hex_color_code()} variation="sharp" />
 <Icon.Signal_cellular_null size="40" color={random_hex_color_code()} variation="sharp" />
@@ -1710,10 +1718,18 @@
 <Icon.Signal_wifi_4_bar size="40" color={random_hex_color_code()} variation="sharp" />
 <Icon.Signal_wifi_4_bar_lock size="40" color={random_hex_color_code()} variation="sharp" />
 <Icon.Signal_wifi_bad size="40" color={random_hex_color_code()} variation="sharp" />
-<Icon.Signal_wifi_connected_no_internet_4 size="40" color={random_hex_color_code()} variation="sharp" />
+<Icon.Signal_wifi_connected_no_internet_4
+  size="40"
+  color={random_hex_color_code()}
+  variation="sharp"
+/>
 <Icon.Signal_wifi_off size="40" color={random_hex_color_code()} variation="sharp" />
 <Icon.Signal_wifi_statusbar_4_bar size="40" color={random_hex_color_code()} variation="sharp" />
-<Icon.Signal_wifi_statusbar_connected_no_internet_4 size="40" color={random_hex_color_code()} variation="sharp" />
+<Icon.Signal_wifi_statusbar_connected_no_internet_4
+  size="40"
+  color={random_hex_color_code()}
+  variation="sharp"
+/>
 <Icon.Signal_wifi_statusbar_null size="40" color={random_hex_color_code()} variation="sharp" />
 <Icon.Signpost size="40" color={random_hex_color_code()} variation="sharp" />
 <Icon.Sim_card size="40" color={random_hex_color_code()} variation="sharp" />
