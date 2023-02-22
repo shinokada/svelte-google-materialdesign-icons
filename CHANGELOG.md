@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.13](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.2.12...v0.2.13) (2023-02-22)
+
+### Features
+
+- add microsoft webmaster tools meta tag ([66aa5b1](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/66aa5b1a3e1d7cb505a1d3ddd7e2dd5604dc132c))
+
+### Bug Fixes
+
+- update index.html ([4e7bf22](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/4e7bf220f7ec385303f3b0cbc00788c9395b175d))
+
 ### [0.2.12](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.2.11...v0.2.12) (2023-02-03)
 
 ### Bug Fixes
