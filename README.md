@@ -16,6 +16,8 @@
 
 10600+ SVG Google Materialdesign icon components for Svelte. Icons support major CSS frameworks using the `class` props. There are five types, filled, outlined, round, sharp, and two-tone.
 
+Thank you for considering using my open-source package for your project. I appreciate your support and contributions towards the development of this package. If you are using this package in a commercial or profit-generating project, please consider supporting me by clicking on the following link, [https://github.com/sponsors/shinokada](https://github.com/sponsors/shinokada). Your support will help me maintain and improve the quality of this package for the benefit of the entire community.
+
 <p align="center">
 <img width="650" src="/static/images/google-outlined-optimized-650-1050.png" />
 </p>
@@ -50,7 +52,6 @@ In a svelte file:
 <Double_arrow />
 <Javascript />
 ```
-
 
 ## Faster compiling
 

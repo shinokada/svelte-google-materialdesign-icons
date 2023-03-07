@@ -4,15 +4,13 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.4.1](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.3.1...v0.4.1) (2023-03-07)
 
-
 ### Features
 
-* add script add-exports and update README ([e2121f9](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/e2121f99e4e03d0ea8854d2a6a0ecf85e62d7c9a))
-
+- add script add-exports and update README ([e2121f9](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/e2121f99e4e03d0ea8854d2a6a0ecf85e62d7c9a))
 
 ### Bug Fixes
 
-* format ([0ddeb48](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/0ddeb480069fcad3371ba23ee6e7b5a764f6fb05))
+- format ([0ddeb48](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/0ddeb480069fcad3371ba23ee6e7b5a764f6fb05))
 
 ### [0.3.1](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.2.12...v0.3.1) (2023-02-22)
 
