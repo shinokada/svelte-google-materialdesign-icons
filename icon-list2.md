@@ -1,5 +1,3 @@
-# Icon names
-
 - A10K.svelte
 - A10Mp.svelte
 - A11Mp.svelte
@@ -2122,7 +2120,3 @@
 - Zoom_in_map.svelte
 - Zoom_out.svelte
 - Zoom_out_map.svelte
-
-## Back to Home
-
-[Back to Home](/)

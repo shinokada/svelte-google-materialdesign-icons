@@ -14,7 +14,7 @@
 <a href="https://www.npmjs.com/package/svelte-google-materialdesign-icons" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/dw/svelte-google-materialdesign-icons.svg" alt="npm" height="25"></a>
 </p>
 
-10600+ SVG Google Materialdesign icon components for Svelte. Icons support major CSS frameworks using the `class` props. There are five types, filled, outlined, round, sharp, and two-tone.
+2120+ SVG Google Materialdesign icon components for Svelte. Icons support major CSS frameworks using the `class` props. There are five types, filled, outlined, round, sharp, and two-tone.
 
 Thank you for considering my open-source package. If you use it in a commercial project, please support me by sponsoring me on GitHub: https://github.com/sponsors/shinokada. Your support helps me maintain and improve this package for the benefit of the community.
 
@@ -164,6 +164,20 @@ If you want to make an icon unfocusable, add `tabindex="-1"`.
 
 ```html
 <Hiking tabindex="-1" />
+```
+
+## Events
+
+All icons have the following events:
+
+```
+on:click
+on:mouseenter
+on:mouseleave
+on:mouseover
+on:mouseout
+on:blur
+on:focus
 ```
 
 ## Passing down other attributes
