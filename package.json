@@ -1,6 +1,6 @@
 {
   "name": "svelte-google-materialdesign-icons",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Google Materialdesign SVG icon components for Svelte",
   "author": {
     "name": "Shinichi Okada",
