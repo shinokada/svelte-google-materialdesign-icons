@@ -49,3 +49,14 @@ export let ariaLabel="signal wifi statusbar connected no internet 4";
 >
   {@html svgpath}
 </svg>
+
+
+<!--
+  @component
+  [Go to Document](https://svelte-google-materialdesign-icons.codewithshin.com/)
+
+  ## Props
+  @prop size = "24";
+  @prop color="currentColor";
+  @prop variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
+-->
