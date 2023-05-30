@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.1](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.5.2...v0.6.1) (2023-05-30)
+
+
+### Features
+
+* add IDE support for component document ([c963efa](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/c963efa244bcfffca8db4befb0329f610f5b752c))
+
 ### [0.5.2](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.5.1...v0.5.2) (2023-05-12)
 
 ### [0.5.1](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.4.1...v0.5.1) (2023-05-12)
