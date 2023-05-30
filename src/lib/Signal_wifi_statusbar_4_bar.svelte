@@ -42,12 +42,14 @@
   aria-label={ariaLabel}
   viewBox="0 0 24 24"
   on:click
+  on:keydown
+  on:keyup
+  on:focus
+  on:blur
   on:mouseenter
   on:mouseleave
   on:mouseover
   on:mouseout
-  on:blur
-  on:focus
 >
   {@html svgpath}
 </svg>
@@ -62,11 +64,13 @@
   @prop variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
   @prop ariaLabel="icon name"
   ## Event
-  - on:click 
-  - on:mouseenter 
-  - on:mouseleave 
-  - on:mouseover 
-  - on:mouseout 
-  - on:blur 
-  - on:focus 
+  - on:click
+  - on:keydown
+  - on:keyup
+  - on:focus
+  - on:blur
+  - on:mouseenter
+  - on:mouseleave
+  - on:mouseover
+  - on:mouseout
 -->
