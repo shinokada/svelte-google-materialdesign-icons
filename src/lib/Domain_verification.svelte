@@ -1,34 +1,39 @@
 <script lang="ts">
-  export let size = "24";
-  export let color="currentColor";
-  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
+  export let size = '24';
+  export let color = 'currentColor';
+  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
   let svgpath: string;
-  let svgfilled = '<path d="m16.6 10.88-1.42-1.42-4.24 4.25-2.12-2.13L7.4 13l3.54 3.54z"/><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6a2 2 0 0 0-2-2zm0 14H5V8h14v10z"/>';
-  let svgoutlined = '<path d="m16.6 10.88-1.42-1.42-4.24 4.25-2.12-2.13L7.4 13l3.54 3.54z"/><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6a2 2 0 0 0-2-2zm0 14H5V8h14v10z"/>';
-  let svground = '<path d="M10.23 15.83c.39.39 1.02.39 1.41 0l4.24-4.24c.39-.39.39-1.02 0-1.42a.996.996 0 0 0-1.41 0l-3.54 3.53-1.41-1.41c-.39-.39-1.02-.39-1.42 0s-.39 1.02 0 1.41l2.13 2.13z"/><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6a2 2 0 0 0-2-2zm0 13c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1V8h14v9z"/>';
-  let svgsharp = '<path d="m16.6 10.88-1.42-1.42-4.24 4.25-2.12-2.13L7.4 13l3.54 3.54z"/><path d="M3 4v16h18V4H3zm16 14H5V8h14v10z"/>';
-  let svgtwotone = '<path d="M5 18h14V8H5v10zm3.82-6.42 2.12 2.12 4.24-4.24 1.41 1.41-5.66 5.66L7.4 13l1.42-1.42z" opacity=".3"/><path d="m16.6 10.88-1.42-1.42-4.24 4.25-2.12-2.13L7.4 13l3.54 3.54z"/><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6a2 2 0 0 0-2-2zm0 14H5V8h14v10z"/>';
+  let svgfilled =
+    '<path d="m16.6 10.88-1.42-1.42-4.24 4.25-2.12-2.13L7.4 13l3.54 3.54z"/><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6a2 2 0 0 0-2-2zm0 14H5V8h14v10z"/>';
+  let svgoutlined =
+    '<path d="m16.6 10.88-1.42-1.42-4.24 4.25-2.12-2.13L7.4 13l3.54 3.54z"/><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6a2 2 0 0 0-2-2zm0 14H5V8h14v10z"/>';
+  let svground =
+    '<path d="M10.23 15.83c.39.39 1.02.39 1.41 0l4.24-4.24c.39-.39.39-1.02 0-1.42a.996.996 0 0 0-1.41 0l-3.54 3.53-1.41-1.41c-.39-.39-1.02-.39-1.42 0s-.39 1.02 0 1.41l2.13 2.13z"/><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6a2 2 0 0 0-2-2zm0 13c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1V8h14v9z"/>';
+  let svgsharp =
+    '<path d="m16.6 10.88-1.42-1.42-4.24 4.25-2.12-2.13L7.4 13l3.54 3.54z"/><path d="M3 4v16h18V4H3zm16 14H5V8h14v10z"/>';
+  let svgtwotone =
+    '<path d="M5 18h14V8H5v10zm3.82-6.42 2.12 2.12 4.24-4.24 1.41 1.41-5.66 5.66L7.4 13l1.42-1.42z" opacity=".3"/><path d="m16.6 10.88-1.42-1.42-4.24 4.25-2.12-2.13L7.4 13l3.54 3.54z"/><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6a2 2 0 0 0-2-2zm0 14H5V8h14v10z"/>';
   switch (variation) {
-    case "filled":
+    case 'filled':
       svgpath = svgfilled;
       break;
-    case "outlined":
+    case 'outlined':
       svgpath = svgoutlined;
       break;
-    case "round":
+    case 'round':
       svgpath = svground;
       break;
-    case "sharp":
+    case 'sharp':
       svgpath = svgsharp;
       break;
-    case "two-tone":
+    case 'two-tone':
       svgpath = svgtwotone;
       break;
     default:
       svgpath = svgoutlined;
   }
-export let ariaLabel="domain verification";
- </script>
+  export let ariaLabel = 'domain verification';
+</script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -39,17 +44,16 @@ export let ariaLabel="domain verification";
   class={$$props.class}
   aria-label={ariaLabel}
   viewBox="0 0 24 24"
-  on:click 
-  on:mouseenter 
-  on:mouseleave 
-  on:mouseover 
-  on:mouseout 
-  on:blur 
-  on:focus 
+  on:click
+  on:mouseenter
+  on:mouseleave
+  on:mouseover
+  on:mouseout
+  on:blur
+  on:focus
 >
   {@html svgpath}
 </svg>
-
 
 <!--
   @component
@@ -59,4 +63,13 @@ export let ariaLabel="domain verification";
   @prop size = "24";
   @prop color="currentColor";
   @prop variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
+  @prop ariaLabel="icon name"
+  ## Event
+  - on:click 
+  - on:mouseenter 
+  - on:mouseleave 
+  - on:mouseover 
+  - on:mouseout 
+  - on:blur 
+  - on:focus 
 -->

@@ -18,7 +18,6 @@
 
 Thank you for considering my open-source package. If you use it in a commercial project, please support me by sponsoring me on GitHub: https://github.com/sponsors/shinokada. Your support helps me maintain and improve this package for the benefit of the community.
 
-
 <p align="center">
 <img width="650" src="/static/images/google-outlined-optimized-650-1050.png" />
 </p>
@@ -97,7 +96,7 @@ To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleRe
 
 ## IDE support
 
-If you are using an LSP-compatible editor, such as VSCode, Atom, Sublime Text, or Neovim, hovering over a component name will display a documentation link, features, props, events, and an example.
+If you are using an LSP-compatible editor, such as VSCode, Atom, Sublime Text, or Neovim, hovering over a component name will display a documentation link, props, and events.
 
 ## Variation
 

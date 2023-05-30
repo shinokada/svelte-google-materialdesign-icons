@@ -1,34 +1,38 @@
 <script lang="ts">
-  export let size = "24";
-  export let color="currentColor";
-  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
+  export let size = '24';
+  export let color = 'currentColor';
+  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
   let svgpath: string;
-  let svgfilled = '<path d="M3 17v-2c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2zM3 7v2c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2z"/>';
-  let svgoutlined = '<path d="M3 7v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2zm16 10H5v-4h14v4zM5 11V7h14v4H5z"/>';
-  let svground = '<path d="M3 17v-2c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2zM3 7v2c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2z"/>';
+  let svgfilled =
+    '<path d="M3 17v-2c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2zM3 7v2c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2z"/>';
+  let svgoutlined =
+    '<path d="M3 7v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2zm16 10H5v-4h14v4zM5 11V7h14v4H5z"/>';
+  let svground =
+    '<path d="M3 17v-2c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2zM3 7v2c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2z"/>';
   let svgsharp = '<path d="M3 19v-6h18v6H3zM3 5v6h18V5H3z"/>';
-  let svgtwotone = '<path d="M19 17H5v-4h14v4zM5 11V7h14v4H5z" opacity=".3"/><path d="M3 7v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2zm16 10H5v-4h14v4zM5 11V7h14v4H5z"/>';
+  let svgtwotone =
+    '<path d="M19 17H5v-4h14v4zM5 11V7h14v4H5z" opacity=".3"/><path d="M3 7v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2zm16 10H5v-4h14v4zM5 11V7h14v4H5z"/>';
   switch (variation) {
-    case "filled":
+    case 'filled':
       svgpath = svgfilled;
       break;
-    case "outlined":
+    case 'outlined':
       svgpath = svgoutlined;
       break;
-    case "round":
+    case 'round':
       svgpath = svground;
       break;
-    case "sharp":
+    case 'sharp':
       svgpath = svgsharp;
       break;
-    case "two-tone":
+    case 'two-tone':
       svgpath = svgtwotone;
       break;
     default:
       svgpath = svgoutlined;
   }
-export let ariaLabel="view stream";
- </script>
+  export let ariaLabel = 'view stream';
+</script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -39,17 +43,16 @@ export let ariaLabel="view stream";
   class={$$props.class}
   aria-label={ariaLabel}
   viewBox="0 0 24 24"
-  on:click 
-  on:mouseenter 
-  on:mouseleave 
-  on:mouseover 
-  on:mouseout 
-  on:blur 
-  on:focus 
+  on:click
+  on:mouseenter
+  on:mouseleave
+  on:mouseover
+  on:mouseout
+  on:blur
+  on:focus
 >
   {@html svgpath}
 </svg>
-
 
 <!--
   @component
@@ -59,4 +62,13 @@ export let ariaLabel="view stream";
   @prop size = "24";
   @prop color="currentColor";
   @prop variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
+  @prop ariaLabel="icon name"
+  ## Event
+  - on:click 
+  - on:mouseenter 
+  - on:mouseleave 
+  - on:mouseover 
+  - on:mouseout 
+  - on:blur 
+  - on:focus 
 -->

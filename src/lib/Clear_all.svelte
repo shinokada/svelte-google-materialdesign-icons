@@ -1,34 +1,35 @@
 <script lang="ts">
-  export let size = "24";
-  export let color="currentColor";
-  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
+  export let size = '24';
+  export let color = 'currentColor';
+  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
   let svgpath: string;
   let svgfilled = '<path d="M5 13h14v-2H5v2zm-2 4h14v-2H3v2zM7 7v2h14V7H7z"/>';
   let svgoutlined = '<path d="M5 13h14v-2H5v2zm-2 4h14v-2H3v2zM7 7v2h14V7H7z"/>';
-  let svground = '<path d="M6 13h12c.55 0 1-.45 1-1s-.45-1-1-1H6c-.55 0-1 .45-1 1s.45 1 1 1zm-2 4h12c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm3-9c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1z"/>';
+  let svground =
+    '<path d="M6 13h12c.55 0 1-.45 1-1s-.45-1-1-1H6c-.55 0-1 .45-1 1s.45 1 1 1zm-2 4h12c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm3-9c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1z"/>';
   let svgsharp = '<path d="M5 13h14v-2H5v2zm-2 4h14v-2H3v2zM7 7v2h14V7H7z"/>';
   let svgtwotone = '<path d="M5 11h14v2H5zm-2 4h14v2H3zm4-8h14v2H7z"/>';
   switch (variation) {
-    case "filled":
+    case 'filled':
       svgpath = svgfilled;
       break;
-    case "outlined":
+    case 'outlined':
       svgpath = svgoutlined;
       break;
-    case "round":
+    case 'round':
       svgpath = svground;
       break;
-    case "sharp":
+    case 'sharp':
       svgpath = svgsharp;
       break;
-    case "two-tone":
+    case 'two-tone':
       svgpath = svgtwotone;
       break;
     default:
       svgpath = svgoutlined;
   }
-export let ariaLabel="clear all";
- </script>
+  export let ariaLabel = 'clear all';
+</script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -39,17 +40,16 @@ export let ariaLabel="clear all";
   class={$$props.class}
   aria-label={ariaLabel}
   viewBox="0 0 24 24"
-  on:click 
-  on:mouseenter 
-  on:mouseleave 
-  on:mouseover 
-  on:mouseout 
-  on:blur 
-  on:focus 
+  on:click
+  on:mouseenter
+  on:mouseleave
+  on:mouseover
+  on:mouseout
+  on:blur
+  on:focus
 >
   {@html svgpath}
 </svg>
-
 
 <!--
   @component
@@ -59,4 +59,13 @@ export let ariaLabel="clear all";
   @prop size = "24";
   @prop color="currentColor";
   @prop variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
+  @prop ariaLabel="icon name"
+  ## Event
+  - on:click 
+  - on:mouseenter 
+  - on:mouseleave 
+  - on:mouseover 
+  - on:mouseout 
+  - on:blur 
+  - on:focus 
 -->

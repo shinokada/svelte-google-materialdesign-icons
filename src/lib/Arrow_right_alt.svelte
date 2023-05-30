@@ -1,34 +1,35 @@
 <script lang="ts">
-  export let size = "24";
-  export let color="currentColor";
-  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
+  export let size = '24';
+  export let color = 'currentColor';
+  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
   let svgpath: string;
   let svgfilled = '<path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/>';
   let svgoutlined = '<path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/>';
-  let svground = '<path d="M16.01 11H5c-.55 0-1 .45-1 1s.45 1 1 1h11.01v1.79c0 .45.54.67.85.35l2.78-2.79c.19-.2.19-.51 0-.71l-2.78-2.79c-.31-.32-.85-.09-.85.35V11z"/>';
+  let svground =
+    '<path d="M16.01 11H5c-.55 0-1 .45-1 1s.45 1 1 1h11.01v1.79c0 .45.54.67.85.35l2.78-2.79c.19-.2.19-.51 0-.71l-2.78-2.79c-.31-.32-.85-.09-.85.35V11z"/>';
   let svgsharp = '<path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/>';
   let svgtwotone = '<path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/>';
   switch (variation) {
-    case "filled":
+    case 'filled':
       svgpath = svgfilled;
       break;
-    case "outlined":
+    case 'outlined':
       svgpath = svgoutlined;
       break;
-    case "round":
+    case 'round':
       svgpath = svground;
       break;
-    case "sharp":
+    case 'sharp':
       svgpath = svgsharp;
       break;
-    case "two-tone":
+    case 'two-tone':
       svgpath = svgtwotone;
       break;
     default:
       svgpath = svgoutlined;
   }
-export let ariaLabel="arrow right alt";
- </script>
+  export let ariaLabel = 'arrow right alt';
+</script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -39,17 +40,16 @@ export let ariaLabel="arrow right alt";
   class={$$props.class}
   aria-label={ariaLabel}
   viewBox="0 0 24 24"
-  on:click 
-  on:mouseenter 
-  on:mouseleave 
-  on:mouseover 
-  on:mouseout 
-  on:blur 
-  on:focus 
+  on:click
+  on:mouseenter
+  on:mouseleave
+  on:mouseover
+  on:mouseout
+  on:blur
+  on:focus
 >
   {@html svgpath}
 </svg>
-
 
 <!--
   @component
@@ -59,4 +59,13 @@ export let ariaLabel="arrow right alt";
   @prop size = "24";
   @prop color="currentColor";
   @prop variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
+  @prop ariaLabel="icon name"
+  ## Event
+  - on:click 
+  - on:mouseenter 
+  - on:mouseleave 
+  - on:mouseover 
+  - on:mouseout 
+  - on:blur 
+  - on:focus 
 -->
