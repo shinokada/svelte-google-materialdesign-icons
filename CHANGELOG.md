@@ -4,17 +4,15 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.6.4](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.6.3...v0.6.4) (2023-06-01)
 
-
 ### Features
 
-* add || ^4.0.0 to peerDependencies ([230477c](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/230477ce2567358266835c48541b49206e6dbb27))
+- add || ^4.0.0 to peerDependencies ([230477c](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/230477ce2567358266835c48541b49206e6dbb27))
 
 ### [0.6.3](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.6.2...v0.6.3) (2023-05-30)
 
-
 ### Features
 
-* event update ([dda6fb6](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/dda6fb635eb9d3be2b45ec07983a7548086c74ae))
+- event update ([dda6fb6](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/dda6fb635eb9d3be2b45ec07983a7548086c74ae))
 
 ### [0.6.2](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.6.1...v0.6.2) (2023-05-30)
 

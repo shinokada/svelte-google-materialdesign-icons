@@ -1,6 +1,7 @@
 <script lang="ts">
   export let size = '24';
   export let color = 'currentColor';
+  export let role = 'img';
   export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
   let svgpath: string;
   let svgfilled = '<path d="m14 6-1-2H5v17h2v-7h5l1 2h7V6h-6zm4 8h-4l-1-2H7V6h5l1 2h5v6z"/>';
@@ -34,10 +35,10 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
   {...$$restProps}
+  {role}
   width={size}
   height={size}
   fill={color}
-  class={$$props.class}
   aria-label={ariaLabel}
   viewBox="0 0 24 24"
   on:click
@@ -59,6 +60,7 @@
 
   ## Props
   @prop size = "24";
+  @prop role = "img";
   @prop color="currentColor";
   @prop variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
   @prop ariaLabel="icon name"

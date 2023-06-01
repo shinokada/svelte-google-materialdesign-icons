@@ -87,12 +87,10 @@ To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleRe
 
 ## Props
 
-| Name                                                 | Default   |
-| ---------------------------------------------------- | --------- |
-| size                                                 | 24        |
-| class                                                |           |
-| ariaLabel                                            | file name |
-| variation (filled, outlined, round, sharp, two-tone) | outlined  |
+- size = '24';
+- role = 'img';
+- ariaLabel = 'icon file name';
+- variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
 
 ## IDE support
 
