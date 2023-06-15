@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.6.5](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.6.4...v0.6.5) (2023-06-01)
 
-
 ### Features
 
-* add prop role="img" ([882fd72](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/882fd72549c498128d5fab06844790b2df9920aa))
+- add prop role="img" ([882fd72](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/882fd72549c498128d5fab06844790b2df9920aa))
 
 ### [0.6.4](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.6.3...v0.6.4) (2023-06-01)
 
