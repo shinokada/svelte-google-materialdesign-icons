@@ -18,7 +18,6 @@ Thank you for considering my open-source package. If you use it in a commercial 
 pnpm i -D svelte-google-materialdesign-icons
 ```
 
-
 ## Usages
 
 In a svelte file:

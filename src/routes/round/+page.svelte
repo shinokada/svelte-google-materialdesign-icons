@@ -16,7 +16,7 @@
     let n = (Math.random() * 0xfffff * 1000000).toString(16);
     return '#' + n.slice(0, 6);
   };
-  const contentClass = ' rounded-lg dark:bg-slate-900 mt-4';
+  const contentClass = ' rounded-lg dark:bg-slate-950 mt-4';
   let searchTerm = '';
 
   $: filteredEntries = Object.entries(Icons).filter(([name, component]) => {
@@ -28,17 +28,17 @@
   placeholder="Search by icon name"
   hoverable={true}
   bind:inputValue={searchTerm}
-  divClass='relative overflow-x-auto'
+  divClass="relative overflow-x-auto"
 >
   <Tabs style="pill" {contentClass} class="p-4">
     <TabItem open>
       <span slot="title" class="text-lg">Mono</span>
-      <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-4 dark:text-white">
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-4 dark:text-white"
+      >
         {#each filteredEntries as [name, component]}
           <div class="flex gap-4 items-center text-lg">
-            <svelte:component 
-            this={component} 
-            class="shrink-0 h-8 w-8" variation="round"/>
+            <svelte:component this={component} class="shrink-0 h-8 w-8" variation="round" />
             {name}
           </div>
         {/each}
@@ -46,7 +46,9 @@
     </TabItem>
     <TabItem>
       <span slot="title" class="text-lg">Random Hex Colors</span>
-      <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-4 dark:text-white">
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-4 dark:text-white"
+      >
         {#each filteredEntries as [name, component]}
           <div class="flex gap-4 items-center text-lg">
             <svelte:component
@@ -62,11 +64,12 @@
     </TabItem>
     <TabItem>
       <span slot="title" class="text-lg">Random Tailwind CSS Colors</span>
-      <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-4 dark:text-white">
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-4 dark:text-white"
+      >
         {#each filteredEntries as [name, component]}
           <div class="flex gap-4 items-center text-lg">
-            <svelte:component this={component} class={random_tailwind_color()}
-             variation="round"/>
+            <svelte:component this={component} class={random_tailwind_color()} variation="round" />
             {name}
           </div>
         {/each}
