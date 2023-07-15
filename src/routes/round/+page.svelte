@@ -38,7 +38,7 @@
           <div class="flex gap-4 items-center text-lg">
             <svelte:component 
             this={component} 
-            class="shrink-0 h-8 w-8" variation="sharp"/>
+            class="shrink-0 h-8 w-8" variation="round"/>
             {name}
           </div>
         {/each}
@@ -53,7 +53,7 @@
               this={component}
               color={random_hex_color_code()}
               class="shrink-0 h-8 w-8"
-              variation="sharp"
+              variation="round"
             />
             {name}
           </div>
@@ -66,7 +66,7 @@
         {#each filteredEntries as [name, component]}
           <div class="flex gap-4 items-center text-lg">
             <svelte:component this={component} class={random_tailwind_color()}
-             variation="sharp"/>
+             variation="round"/>
             {name}
           </div>
         {/each}
