@@ -8,9 +8,23 @@
 <a href="https://www.npmjs.com/package/svelte-google-materialdesign-icons" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/dw/svelte-google-materialdesign-icons.svg" alt="npm" height="25" style="height: 25px !important;"></a>
 </div>
 
-2120+ SVG Google Materialdesign icon components for Svelte. Icons support major CSS frameworks using the `class` props. There are five types, filled, outlined, round, sharp, and two-tone.
+2120+ SVG Google Materialdesign icon components for Svelte.
 
-Thank you for considering my open-source package. If you use it in a commercial project, please support me by sponsoring me on GitHub: https://github.com/sponsors/shinokada. Your support helps me maintain and improve this package for the benefit of the community.
+Thank you for considering my open-source package. If you use it in a commercial project, please support me by sponsoring me on [GitHub sponsor](https://github.com/sponsors/shinokada). Your support helps me maintain and improve this package for the benefit of the community.
+
+## Repo
+
+[GitHub Repo](https://github.com/shinokada/svelte-google-materialdesign-icons)
+
+## Original source
+
+[Google Fonts](https://github.com/google/fonts)
+
+## License
+
+[Svelte-Coreui-Icons License](https://github.com/google/fonts#license)
+
+[Google Fonts LICENSE](https://github.com/coreui/coreui-icons/blob/main/LICENSE)
 
 ## Installation
 
@@ -48,8 +62,6 @@ If you need only a few icons from this library in your Svelte app, import them d
 ```
 
 If you are a TypeScript user, install **typescript version 5.0.0 or above**.
-
-As of March 2023, the `typescript@beta` version is now available:
 
 ```sh
 pnpm i -D typescript@beta
@@ -96,6 +108,12 @@ Use the `size` prop to change the size of icons.
 <Javascript size="50" />
 ```
 
+If you are using Tailwind CSS, you can add a custom size using Tailwind CSS by including the desired classes in the class prop. For example:
+
+```html
+<Hiking class="shrink-0 h-20 w-20" />
+```
+
 ## CSS HEX Colors
 
 Use the `color` prop to change colors with HEX color code.
@@ -108,7 +126,7 @@ Use the `color` prop to change colors with HEX color code.
 
 ## CSS framworks suport
 
-Use the `class` prop to change size, colors and add additional css.
+You can apply CSS framework color and other attributes directly to the icon component or its parent tag using the `class` prop.
 
 Tailwind CSS example:
 
@@ -221,10 +239,6 @@ Use `import * as Icon from 'svelte-google-materialdesign-icons`.
 <Icon.Hiking size="50" class="text-pink-700" />
 <Icon.Double_arrow size="50" class="text-blue-500" />
 ```
-
-## Orignal SVG icons
-
-[marella/material-design-icons](https://github.com/marella/material-design-icons/tree/main/svg/filled)
 
 ## Icon finder
 
