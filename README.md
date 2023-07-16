@@ -22,9 +22,9 @@ Thank you for considering my open-source package. If you use it in a commercial 
 
 ## License
 
-[Svelte-Coreui-Icons License](https://github.com/google/fonts#license)
+[Svelte-Google-Materialdesign-Icons License](https://github.com/shinokada/svelte-google-materialdesign-icons/LICENSE)
 
-[Google Fonts LICENSE](https://github.com/coreui/coreui-icons/blob/main/LICENSE)
+[Google Fonts LICENSE](https://github.com/google/fonts#license)
 
 ## Installation
 
