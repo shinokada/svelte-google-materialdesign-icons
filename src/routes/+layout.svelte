@@ -70,7 +70,7 @@
         >Outlined</NavLi
       >
       <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/sharp'} href="/sharp">Sharp</NavLi>
-      <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/two-tones'} href="/two-tones"
+      <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/two-tone'} href="/two-tones"
         >Two tones</NavLi
       >
       <NavLi
@@ -103,7 +103,7 @@
       <FooterLink class="lg:px-2 lg:mb-0" href="/filled">Filled</FooterLink>
       <FooterLink class="lg:px-2 lg:mb-0" href="/outlined">Outlined</FooterLink>
       <FooterLink class="lg:px-2 lg:mb-0" href="/sharp">Sharp</FooterLink>
-      <FooterLink class="lg:px-2 lg:mb-0" href="/two-tones">Two tones</FooterLink>
+      <FooterLink class="lg:px-2 lg:mb-0" href="/two-tone">Two tones</FooterLink>
       <FooterLink
         class="lg:px-2 lg:mb-0"
         href="https://github.com/shinokada/svelte-google-materialdesign-icons">GitHub</FooterLink
