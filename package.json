@@ -8,7 +8,7 @@
     "url": "https://blog.codewithshin.com"
   },
   "bugs": "https://github.com/shinokada/svelte-google-materialdesign-icons/issues",
-  "homepage": "https://svelte-google-materialdesign-icons.codewithshin.com",
+  "homepage": "https://svelte-google-materialdesign-icons.vercel.app",
   "license": "MIT",
   "scripts": {
     "dev": "vite dev",
