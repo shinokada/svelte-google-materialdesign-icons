@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.7](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.6.6...v0.6.7) (2023-07-20)
+
+
+### Features
+
+* add size range ([432b034](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/432b03447c67cca98aaa557e4ec270bad0522b23))
+* change to @sveltejs/adapter-vercel ([a51f41d](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/a51f41d3125b1da9ef793eba339c9fd93968fc11))
+* footer update ([a6ae339](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/a6ae33979943ea318c48c2d3ad787f0332b7b7bc))
+* layout update ([87d739d](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/87d739da5de4d1d178be069fdf3092b69432b43f))
+
+
+### Bug Fixes
+
+* homepage update ([508a2ed](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/508a2ed49b9a02cc64b6d318b8348c9ada67c278))
+* link typo ([3952d4b](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/3952d4bce21e3edaa5caec657570cc6e24e55eec))
+* link typo ([a0de472](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/a0de472e891c338ef755f7c4c6ba4cef7acaf1ec))
+* remove .vercel ([c377380](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/c377380eb96ca17f093b331c9bf89b481a743861))
+* typo ([c1d4fc9](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/c1d4fc96a64a6209ca5c67150878a904f3b9e9ff))
+* update flowbite-svelte v0.40.1, add @floating-ui/dom remove flowbite and popper, add tests ([1d9ae48](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/1d9ae48884f0971d8771464f3e861dfc150ae24b))
+* update flowbite-svelte v0.40.1, add @floating-ui/dom remove flowbite and popper, add tests ([27acea9](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/27acea9f2b7bc89a127b034c2c5f303e2b03a204))
+
 ### [0.6.6](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.6.5...v0.6.6) (2023-06-15)
 
 ### [0.6.5](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.6.4...v0.6.5) (2023-06-01)
