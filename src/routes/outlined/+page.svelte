@@ -18,7 +18,7 @@
   });
   let size="24"
 </script>
-<h1>Svelte Teenyicons: Outline</h1>
+<h1>Svelte Google Materialdesign Icons: Outlined</h1>
 <TableSearch
   placeholder="Search by icon name"
   hoverable={true}

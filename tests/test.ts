@@ -27,5 +27,5 @@ test('Sharp page has expected h1', async ({ page }) => {
 
 test('Two-tone page has expected h1', async ({ page }) => {
   await page.goto('/two-tone');
-  expect(await page.textContent('h1')).toBe('Svelte Google Materialdesign Icons: Two-tone');
+  expect(await page.textContent('h1')).toBe('Svelte Google Materialdesign Icons: Twotone');
 });
