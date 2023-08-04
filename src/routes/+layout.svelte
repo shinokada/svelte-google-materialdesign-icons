@@ -69,6 +69,7 @@
       <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/outlined'} href="/outlined"
         >Outlined</NavLi
       >
+      <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/round'} href="/round">Round</NavLi>
       <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/sharp'} href="/sharp">Sharp</NavLi>
       <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/two-tone'} href="/two-tone"
         >Two-tone</NavLi
@@ -102,6 +103,7 @@
       <FooterLink class="lg:px-2 lg:mb-0">Home</FooterLink>
       <FooterLink class="lg:px-2 lg:mb-0" href="/filled">Filled</FooterLink>
       <FooterLink class="lg:px-2 lg:mb-0" href="/outlined">Outlined</FooterLink>
+      <FooterLink class="lg:px-2 lg:mb-0" href="/round">Round</FooterLink>
       <FooterLink class="lg:px-2 lg:mb-0" href="/sharp">Sharp</FooterLink>
       <FooterLink class="lg:px-2 lg:mb-0" href="/two-tone">Two-tone</FooterLink>
       <FooterLink

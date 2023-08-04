@@ -38,80 +38,41 @@ In a svelte file:
 
 ```html
 <script>
-  import { Hiking, Double_arrow, Javascript } from 'svelte-google-materialdesign-icons';
+  import { Icon } from 'svelte-google-materialdesign-icons';
 </script>
 
-<Hiking />
-<Double_arrow />
-<Javascript />
-```
-
-Since a component name can't be started with a number, if a SVG file name starts with a number, `A` is prefixed.
-For example, `30fps_select.svg` will be named as `A30fps_select.svelte`.
-
-## Faster compiling
-
-If you need only a few icons from this library in your Svelte app, import them directly. This can optimize compilation speed and improve performance by reducing the amount of code processed during compilation.
-
-```html
-<script>
-  import Hiking from 'svelte-google-materialdesign-icons/Hiking.svelte';
-</script>
-
-<Hiking />
-```
-
-If you are a TypeScript user, install **typescript version 5.0.0 or above**.
-
-```sh
-pnpm i -D typescript@beta
-```
-
-To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleResolution` in your tsconfig.json file.
-
-```json
-{
-  //...
-  "compilerOptions": {
-    // ...
-    "moduleResolution": "nodenext"
-  }
-}
+<Icon name="accessible-filled" />
+<Icon name="accessible-outlined" />
+<Icon name="accessible-round" />
+<Icon name="accessible-sharp" />
+<Icon name="accessible-twotone" />
 ```
 
 ## Props
 
-- size = '24';
-- role = 'img';
-- ariaLabel = 'icon file name';
-- variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = "outlined";
+- @prop name;
+- @prop width = "24";
+- @prop height = "24";
+- @prop role = 'img';
+- @prop color = 'currentColor'
+- @prop ariaLabel='icon name'
 
 ## IDE support
 
 If you are using an LSP-compatible editor, such as VSCode, Atom, Sublime Text, or Neovim, hovering over a component name will display a documentation link, props, and events.
 
-## Variation
-
-The default variation value is outline. Use the `variation` prop to change it to solid.
-
-```html
-<Hiking variation="two-tone" />
-```
-
 ## Size
 
-Use the `size` prop to change the size of icons.
+Use the `width` and `height` props to change the size of icons.
 
 ```html
-<Hiking size="30" />
-<Double_arrow size="40" />
-<Javascript size="50" />
+<Icon name="accessible-filled" width="100" height="100" />
 ```
 
 If you are using Tailwind CSS, you can add a custom size using Tailwind CSS by including the desired classes in the class prop. For example:
 
 ```html
-<Hiking class="shrink-0 h-20 w-20" />
+<Icon name="accessible-filled" class="shrink-0 h-20 w-20" />
 ```
 
 ## CSS HEX Colors
@@ -119,25 +80,23 @@ If you are using Tailwind CSS, you can add a custom size using Tailwind CSS by i
 Use the `color` prop to change colors with HEX color code.
 
 ```html
-<Hiking size="50" color="#ff0000" />
-<Double_arrow size="50" color="#3a7cff" />
-<Javascript size="50" color="#3fe537" />
+<Icon name="accessible-filled" color="#c61515" />
 ```
 
-## CSS framworks suport
+## CSS frameworks suport
 
 You can apply CSS framework color and other attributes directly to the icon component or its parent tag using the `class` prop.
 
 Tailwind CSS example:
 
 ```html
-<Hiking class="h-24 w-24 text-blue-700 mr-4" />
+<Icon name="accessible-filled" class="text-red-700 inline m-1" />
 ```
 
 Bootstrap examples:
 
 ```html
-<Hiking class="position-absolute top-0 px-1" />
+<Icon name="accessible-filled" class="position-absolute top-0 px-1" />
 ```
 
 ## Dark mode
@@ -147,16 +106,16 @@ If you are using the dark mode on your website with Tailwind CSS, add your dark 
 Let's use `dark` for the dark mode class as an example.
 
 ```html
-<Hiking class="text-blue-700 dark:text-red-500" />
+<Icon name="accessible-filled"  class="text-blue-700 dark:text-red-500" />
 ```
 
 ## aria-label
 
-All icons have aria-label. For example `Hiking` has `aria-label="hiking"`.
+All icons have aria-label. For example `accessible-filled` has `aria-label="accessible-filled`"`.
 Use `ariaLabel` prop to modify the `aria-label` value.
 
 ```html
-<Hiking ariaLabel="Hiking icon" />
+<Icon name="accessible-filled" ariaLabel="red accessible" color="#c61515"/>
 ```
 
 ## Unfocusable icon
@@ -164,7 +123,7 @@ Use `ariaLabel` prop to modify the `aria-label` value.
 If you want to make an icon unfocusable, add `tabindex="-1"`.
 
 ```html
-<Hiking tabindex="-1" />
+<Icon name="accessible-filled"  tabindex="-1" />
 ```
 
 ## Events
@@ -186,63 +145,59 @@ All icons have the following events:
 You can pass other attibutes as well.
 
 ```html
-<Hiking tabindex="0" />
+<Icon name="accessible-filled"  tabindex="0" />
 ```
 
 ## Using svelte:component
 
 ```html
-<script>
-  import { Hiking } from 'svelte-google-materialdesign-icons';
-</script>
-
-<svelte:component this="{Hiking}" />
+<svelte:component this="{Icon}" name="accessible-filled" />
 ```
 
 ## Using onMount
 
 ```html
 <script>
-  import { Hiking } from 'svelte-google-materialdesign-icons';
+  import { Icon } from 'svelte-materialdesign-icons';
   import { onMount } from 'svelte';
   const props = {
+    name: 'accessible-filled',
     size: '50',
     color: '#ff0000'
   };
   onMount(() => {
-    const icon = new Hiking({ target: document.body, props });
+    const icon = new Icon({ target: document.body, props });
   });
 </script>
 ```
 
+
 ## Import all
 
-Use `import * as Icon from 'svelte-google-materialdesign-icons`.
+Use `import { Icon, icons } from 'svelte-materialdesign-icons';`.
 
 ```html
 <script>
-  import * as Icon from 'svelte-google-materialdesign-icons';
+  import { Icon, icons } from 'svelte-materialdesign-icons';
+  function filterIconsByKeyword(icons, keyword) {
+    const filteredIcons = {};
+    for (const key in icons) {
+      if (key.includes(keyword)) {
+        filteredIcons[key] = icons[key];
+      }
+    }
+    return filteredIcons;
+  }
+  const outlineIcons = filterIconsByKeyword(icons, '-outlined');
 </script>
 
-<Icon.Hiking />
-<Icon.Double_arrow />
-
-<h1>Size</h1>
-<Icon.Hiking size="50" />
-<Icon.Double_arrow size="50" />
-
-<h1>CSS HEX color</h1>
-<Icon.Hiking size="50" color="#ff0000" />
-<Icon.Double_arrow size="50" color="#3a7cff" />
-
-<h1>Tailwind CSS</h1>
-<Icon.Hiking size="50" class="text-pink-700" />
-<Icon.Double_arrow size="50" class="text-blue-500" />
+{#each Object.keys(outlineIcons) as name}
+<div class="flex gap-4 items-center text-lg">
+  <Icon name={name} class="shrink-0"/>
+  {name}
+</div>
+{/each}
 ```
-
-## Icon finder
-
-You can find icon images at [Google Fonts](https://fonts.google.com/icons?selected=Material+Icons)
 
 ## Other icons
 
