@@ -16,7 +16,8 @@
   $: activeUrl = $page.url.pathname;
   const title = 'Svelte Google Materialdesign Icons';
   let divClass = 'w-full ml-auto lg:block lg:w-auto order-1 lg:order-none';
-  let ulClass = 'flex flex-col py-3 my-4 lg:flex-row lg:my-0 text-sm font-medium gap-4 dark:lg:bg-transparent lg:bg-white lg:border-0';
+  let ulClass =
+    'flex flex-col py-3 my-4 lg:flex-row lg:my-0 text-sm font-medium gap-4 dark:lg:bg-transparent lg:bg-white lg:border-0';
 </script>
 
 <MetaTags
