@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.2](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.8.1...v0.8.2) (2023-09-21)
+
+
+### Features
+
+* add context ([f7c8038](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/f7c80387c10bf503d95018240304d2a6c7a27285))
+* add sidebar menu ([7c89d83](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/7c89d83c16c05d042fd446a927db0ad3c8d24f8f))
+
+
+### Bug Fixes
+
+* title ([e6e45fe](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/e6e45fedbae35559b09be279895554f3b5de7a8e))
+
 ### [0.8.1](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.7.1...v0.8.1) (2023-09-01)
 
 ### Features
