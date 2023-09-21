@@ -1,8 +1,20 @@
 <script lang="ts">
-  export let size = '24';
-  export let color = 'currentColor';
-  export let role = 'img';
-  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
+  interface CtxType {
+    size?: string;
+    role?: string;
+    color?: string;
+    variation?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+  }
+
+  import { getContext } from 'svelte';
+  const ctx: CtxType = getContext('iconCtx') ?? {};
+
+  export let size: string = ctx.size || '24';
+  export let role: string = ctx.role || 'img';
+  export let color: string = ctx.color || 'currentColor';
+  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
+
   let svgpath: string;
   let svgfilled =
     '<path d="M13.92 8C13.44 5.16 10.97 3 8 3 4.69 3 2 5.69 2 9c0 2.97 2.16 5.44 5 5.92V21h2v-6.09c0-.98-.71-1.8-1.67-1.97a3.999 3.999 0 1 1 4.61-4.61c.17.96.99 1.67 1.97 1.67h4.26l-1.59 1.59L18 13l4-4-4-4-1.41 1.41L18.17 8h-4.25z"/>';
@@ -62,9 +74,10 @@
 @component
 [Go to docs](https://svelte-google-materialdesign-icons.vercel.app)
 ## Props
-@prop export let size = '24';
-@prop export let color = 'currentColor';
-@prop export let role = 'img';
-@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
+@prop export let size: string = ctx.size || '24';
+@prop export let role: string = ctx.role || 'img';
+@prop export let color: string = ctx.color || 'currentColor';
+@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
 @prop export let ariaLabel = 'roundabout right';
 -->

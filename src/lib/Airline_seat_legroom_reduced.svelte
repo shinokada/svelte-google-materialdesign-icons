@@ -1,8 +1,20 @@
 <script lang="ts">
-  export let size = '24';
-  export let color = 'currentColor';
-  export let role = 'img';
-  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
+  interface CtxType {
+    size?: string;
+    role?: string;
+    color?: string;
+    variation?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+  }
+
+  import { getContext } from 'svelte';
+  const ctx: CtxType = getContext('iconCtx') ?? {};
+
+  export let size: string = ctx.size || '24';
+  export let role: string = ctx.role || 'img';
+  export let color: string = ctx.color || 'currentColor';
+  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
+
   let svgpath: string;
   let svgfilled =
     '<path d="M19.97 19.2c.18.96-.55 1.8-1.47 1.8H14v-3l1-4H9c-1.65 0-3-1.35-3-3V3h6v6h5c1.1 0 2 .9 2 2l-2 7h1.44c.73 0 1.39.49 1.53 1.2zM5 12V3H3v9c0 2.76 2.24 5 5 5h4v-2H8c-1.66 0-3-1.34-3-3z"/>';
@@ -62,9 +74,10 @@
 @component
 [Go to docs](https://svelte-google-materialdesign-icons.vercel.app)
 ## Props
-@prop export let size = '24';
-@prop export let color = 'currentColor';
-@prop export let role = 'img';
-@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
+@prop export let size: string = ctx.size || '24';
+@prop export let role: string = ctx.role || 'img';
+@prop export let color: string = ctx.color || 'currentColor';
+@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
 @prop export let ariaLabel = 'airline seat legroom reduced';
 -->

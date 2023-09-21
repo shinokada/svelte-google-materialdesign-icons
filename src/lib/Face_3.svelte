@@ -1,8 +1,20 @@
 <script lang="ts">
-  export let size = '24';
-  export let color = 'currentColor';
-  export let role = 'img';
-  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
+  interface CtxType {
+    size?: string;
+    role?: string;
+    color?: string;
+    variation?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+  }
+
+  import { getContext } from 'svelte';
+  const ctx: CtxType = getContext('iconCtx') ?? {};
+
+  export let size: string = ctx.size || '24';
+  export let role: string = ctx.role || 'img';
+  export let color: string = ctx.color || 'currentColor';
+  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
+
   let svgpath: string;
   let svgfilled =
     '<circle cx="9" cy="13" r="1.25"/><circle cx="15" cy="13" r="1.25"/><path d="M22.91 11.96C22.39 6.32 17.66 2 12 2S1.61 6.32 1.09 11.96l-.9 9.86c-.1 1.17.82 2.18 2 2.18h19.62c1.18 0 2.1-1.01 1.99-2.18l-.89-9.86zM4.54 9.13c.87.55 1.89.87 2.96.87 1.86 0 3.5-.93 4.5-2.35C13 9.07 14.64 10 16.5 10c1.07 0 2.09-.32 2.96-.87.34.89.54 1.86.54 2.87 0 4.41-3.59 8-8 8s-8-3.59-8-8c0-1.01.2-1.98.54-2.87z"/>';
@@ -62,9 +74,10 @@
 @component
 [Go to docs](https://svelte-google-materialdesign-icons.vercel.app)
 ## Props
-@prop export let size = '24';
-@prop export let color = 'currentColor';
-@prop export let role = 'img';
-@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
+@prop export let size: string = ctx.size || '24';
+@prop export let role: string = ctx.role || 'img';
+@prop export let color: string = ctx.color || 'currentColor';
+@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
 @prop export let ariaLabel = 'face 3';
 -->
