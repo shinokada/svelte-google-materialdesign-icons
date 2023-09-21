@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.8.1](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.7.1...v0.8.1) (2023-09-01)
 
-
 ### Features
 
-* smaller compiled size and Icon component ([1be2ec2](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/1be2ec20b023ee5042713d6a133ec1d6acc17fed))
+- smaller compiled size and Icon component ([1be2ec2](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/1be2ec20b023ee5042713d6a133ec1d6acc17fed))
 
 ### [0.7.1](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.6.7...v0.7.1) (2023-08-04)
 
