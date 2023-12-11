@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.3](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.8.2...v0.8.3) (2023-12-11)
+
+
+### Features
+
+* add events to Icon component ([1467082](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/14670827f28932f8b234c825a8f8061526bf6c70))
+
 ### [0.8.2](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.8.1...v0.8.2) (2023-09-21)
 
 ### Features
