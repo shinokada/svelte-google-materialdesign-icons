@@ -9,6 +9,15 @@
 
 <svelte:component
   this={icon}
+  on:click
+  on:keydown
+  on:keyup
+  on:focus
+  on:blur
+  on:mouseenter
+  on:mouseleave
+  on:mouseover
+  on:mouseout
   {...$$restProps}
   {role}
   {size}

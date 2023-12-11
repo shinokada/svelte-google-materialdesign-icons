@@ -100,6 +100,25 @@ If you are using Tailwind CSS, you can add a custom size using Tailwind CSS by i
 <Hiking class="shrink-0 h-20 w-20" />
 ```
 
+## Using Icon component
+
+This library provides `Icon` component that you can use the `icon` and other props to set an icon.
+
+```js
+<script>
+  import {Icon, Add_to_photos} from 'svelte-google-materialdesign-icons';
+</script>
+
+<Icon
+    icon={Add_to_photos}
+    on:click={() => console.log('Hello!')}
+    size="50"
+    variation="outlined"
+    ariaLabel="Add to your photo library"
+/>
+```
+
+Please see Event section under to see forwarded events.
 
 ## Setting Global Icon using setContext
 
