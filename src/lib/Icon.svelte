@@ -24,6 +24,15 @@
   {variation}
   class={$$props.class}
   {ariaLabel}
+  on:click
+  on:keydown
+  on:keyup
+  on:focus
+  on:blur
+  on:mouseenter
+  on:mouseleave
+  on:mouseover
+  on:mouseout
 />
 
 <!--
