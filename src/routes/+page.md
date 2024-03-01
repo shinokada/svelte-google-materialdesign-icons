@@ -20,16 +20,6 @@ Thank you for considering my open-source package. If you use it in a commercial 
 
 [GitHub Repo](https://github.com/shinokada/svelte-google-materialdesign-icons)
 
-## Original source
-
-[Google Fonts](https://github.com/google/fonts)
-
-## License
-
-[Svelte-Google-Materialdesign-Icons License](https://github.com/shinokada/svelte-google-materialdesign-icons/LICENSE)
-
-[Google Fonts LICENSE](https://github.com/google/fonts#license)
-
 ## Installation
 
 ```sh
@@ -384,6 +374,16 @@ Use `import * as Icon from 'svelte-google-materialdesign-icons`.
 
 You can find icon images at [Google Fonts](https://fonts.google.com/icons?selected=Material+Icons)
 
+## Original source
+
+[Google Fonts](https://github.com/google/fonts)
+
+## License
+
+[Svelte-Google-Materialdesign-Icons License](https://github.com/shinokada/svelte-google-materialdesign-icons/LICENSE)
+
+[Google Fonts LICENSE](https://github.com/google/fonts#license)
+
 ## Other icons
 
-[Svelte-Icon-Sets](https://svelte-svg-icons.vercel.app/)
+[Svelte-Icon-Sets](https://svelte-svg-icons.codewithshin.com/)

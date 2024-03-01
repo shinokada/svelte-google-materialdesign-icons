@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.0.1](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.8.3...v1.0.1) (2024-01-27)
 
-
 ### Bug Fixes
 
-* add class="ml-3 m-0 lg:hidden md:block" to NavHamburger ([8f43462](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/8f434623c724c1d57d4ee0e2edd0be6d70e81b88))
+- add class="ml-3 m-0 lg:hidden md:block" to NavHamburger ([8f43462](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/8f434623c724c1d57d4ee0e2edd0be6d70e81b88))
 
 ### [0.8.3](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v0.8.2...v0.8.3) (2023-12-11)
 
