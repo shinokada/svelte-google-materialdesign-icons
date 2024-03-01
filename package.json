@@ -8579,6 +8579,7 @@
     "./Zoom_out_map.svelte": {
       "types": "./dist/Zoom_out_map.svelte.d.ts",
       "svelte": "./dist/Zoom_out_map.svelte"
-    }
+    },
+    "./package.json": "./package.json"
   }
 }
