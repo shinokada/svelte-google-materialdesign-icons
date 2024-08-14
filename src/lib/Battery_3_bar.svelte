@@ -3,7 +3,7 @@
     size?: string;
     role?: string;
     color?: string;
-    variation?: "filled" | "outlined" | "round" | "sharp" | "two-tone";
+    variation?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
   }
 
   import { getContext } from 'svelte';
@@ -12,10 +12,11 @@
   export let size: string = ctx.size || '24';
   export let role: string = ctx.role || 'img';
   export let color: string = ctx.color || 'currentColor';
-  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = ctx.variation || "outlined";
+  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
 
-export let ariaLabel="battery 3 bar";
- </script>
+  export let ariaLabel = 'battery 3 bar';
+</script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -37,14 +38,34 @@ export let ariaLabel="battery 3 bar";
   on:mouseout
 >
   {#if variation === 'outlined'}
-    <path d="M17 5v16c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1h2V2h4v2h2c.55 0 1 .45 1 1zm-2 1H9v8h6V6z"/>
+    <path
+      d="M17 5v16c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1h2V2h4v2h2c.55 0 1 .45 1 1zm-2 1H9v8h6V6z"
+    />
   {:else if variation === 'filled'}
-    <path d="M17 5v16c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1h2V2h4v2h2c.55 0 1 .45 1 1zm-2 1H9v8h6V6z"/>
+    <path
+      d="M17 5v16c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1h2V2h4v2h2c.55 0 1 .45 1 1zm-2 1H9v8h6V6z"
+    />
   {:else if variation === 'round'}
-    <path d="M17 5v16c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1h2V3c0-.55.45-1 1-1h2c.55 0 1 .45 1 1v1h2c.55 0 1 .45 1 1zm-2 1H9v8h6V6z"/>
+    <path
+      d="M17 5v16c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1h2V3c0-.55.45-1 1-1h2c.55 0 1 .45 1 1v1h2c.55 0 1 .45 1 1zm-2 1H9v8h6V6z"
+    />
   {:else if variation === 'sharp'}
-    <path d="M17 4v18H7V4h3V2h4v2h3zm-2 2H9v8h6V6z"/>
+    <path d="M17 4v18H7V4h3V2h4v2h3zm-2 2H9v8h6V6z" />
   {:else if variation === 'two-tone'}
-    <path d="M9 6h6v8H9z" opacity=".3"/><path d="M17 5v16c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1h2V2h4v2h2c.55 0 1 .45 1 1zm-2 1H9v8h6V6z"/>
+    <path d="M9 6h6v8H9z" opacity=".3" /><path
+      d="M17 5v16c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1h2V2h4v2h2c.55 0 1 .45 1 1zm-2 1H9v8h6V6z"
+    />
   {/if}
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-google-materialdesign-icons.codewithshin.com)
+## Props
+@prop export let size: string = ctx.size || '24';
+@prop export let role: string = ctx.role || 'img';
+@prop export let color: string = ctx.color || 'currentColor';
+@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
+@prop export let ariaLabel = 'battery 3 bar';
+-->

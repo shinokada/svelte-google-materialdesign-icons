@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.5
+
+### Patch Changes
+
+- fix: two-tone ([`6166743dfe508af4982394b96caf34bcd017d490`](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/6166743dfe508af4982394b96caf34bcd017d490))
+
 ## 1.0.4
 
 ### Patch Changes

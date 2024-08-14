@@ -3,7 +3,7 @@
     size?: string;
     role?: string;
     color?: string;
-    variation?: "filled" | "outlined" | "round" | "sharp" | "two-tone";
+    variation?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
   }
 
   import { getContext } from 'svelte';
@@ -12,10 +12,11 @@
   export let size: string = ctx.size || '24';
   export let role: string = ctx.role || 'img';
   export let color: string = ctx.color || 'currentColor';
-  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = ctx.variation || "outlined";
+  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
 
-export let ariaLabel="signal cellular nodata";
- </script>
+  export let ariaLabel = 'signal cellular nodata';
+</script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -37,14 +38,36 @@ export let ariaLabel="signal cellular nodata";
   on:mouseout
 >
   {#if variation === 'outlined'}
-    <path d="M22 13h-9v9H2L22 2v11zm-1 2.41L19.59 14l-2.09 2.09L15.41 14 14 15.41l2.09 2.09L14 19.59 15.41 21l2.09-2.08L19.59 21 21 19.59l-2.08-2.09L21 15.41z"/>
+    <path
+      d="M22 13h-9v9H2L22 2v11zm-1 2.41L19.59 14l-2.09 2.09L15.41 14 14 15.41l2.09 2.09L14 19.59 15.41 21l2.09-2.08L19.59 21 21 19.59l-2.08-2.09L21 15.41z"
+    />
   {:else if variation === 'filled'}
-    <path d="M22 13h-9v9H2L22 2v11zm-1 2.41L19.59 14l-2.09 2.09L15.41 14 14 15.41l2.09 2.09L14 19.59 15.41 21l2.09-2.08L19.59 21 21 19.59l-2.08-2.09L21 15.41z"/>
+    <path
+      d="M22 13h-9v9H2L22 2v11zm-1 2.41L19.59 14l-2.09 2.09L15.41 14 14 15.41l2.09 2.09L14 19.59 15.41 21l2.09-2.08L19.59 21 21 19.59l-2.08-2.09L21 15.41z"
+    />
   {:else if variation === 'round'}
-    <path d="M22 13h-7c-1.1 0-2 .9-2 2v7H4.41c-.89 0-1.34-1.08-.71-1.71L20.29 3.71c.63-.63 1.71-.19 1.71.7V13zm-1.7 1.71a.996.996 0 0 0-1.41 0L17.5 16.1l-1.39-1.39a.996.996 0 1 0-1.41 1.41l1.39 1.39-1.39 1.39a.996.996 0 1 0 1.41 1.41l1.39-1.38 1.39 1.38a.996.996 0 1 0 1.41-1.41l-1.38-1.39 1.38-1.39a.996.996 0 0 0 0-1.41z"/>
+    <path
+      d="M22 13h-7c-1.1 0-2 .9-2 2v7H4.41c-.89 0-1.34-1.08-.71-1.71L20.29 3.71c.63-.63 1.71-.19 1.71.7V13zm-1.7 1.71a.996.996 0 0 0-1.41 0L17.5 16.1l-1.39-1.39a.996.996 0 1 0-1.41 1.41l1.39 1.39-1.39 1.39a.996.996 0 1 0 1.41 1.41l1.39-1.38 1.39 1.38a.996.996 0 1 0 1.41-1.41l-1.38-1.39 1.38-1.39a.996.996 0 0 0 0-1.41z"
+    />
   {:else if variation === 'sharp'}
-    <path d="M22 13h-9v9H2L22 2v11zm-1 2.41L19.59 14l-2.09 2.09L15.41 14 14 15.41l2.09 2.09L14 19.59 15.41 21l2.09-2.08L19.59 21 21 19.59l-2.08-2.09L21 15.41z"/>
+    <path
+      d="M22 13h-9v9H2L22 2v11zm-1 2.41L19.59 14l-2.09 2.09L15.41 14 14 15.41l2.09 2.09L14 19.59 15.41 21l2.09-2.08L19.59 21 21 19.59l-2.08-2.09L21 15.41z"
+    />
   {:else if variation === 'two-tone'}
-    <path d="M22 13h-9v9H2L22 2v11zm-1 2.41L19.59 14l-2.09 2.09L15.41 14 14 15.41l2.09 2.09L14 19.59 15.41 21l2.09-2.08L19.59 21 21 19.59l-2.08-2.09L21 15.41z"/>
+    <path
+      d="M22 13h-9v9H2L22 2v11zm-1 2.41L19.59 14l-2.09 2.09L15.41 14 14 15.41l2.09 2.09L14 19.59 15.41 21l2.09-2.08L19.59 21 21 19.59l-2.08-2.09L21 15.41z"
+    />
   {/if}
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-google-materialdesign-icons.codewithshin.com)
+## Props
+@prop export let size: string = ctx.size || '24';
+@prop export let role: string = ctx.role || 'img';
+@prop export let color: string = ctx.color || 'currentColor';
+@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
+@prop export let ariaLabel = 'signal cellular nodata';
+-->

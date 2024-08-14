@@ -3,7 +3,7 @@
     size?: string;
     role?: string;
     color?: string;
-    variation?: "filled" | "outlined" | "round" | "sharp" | "two-tone";
+    variation?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
   }
 
   import { getContext } from 'svelte';
@@ -12,10 +12,11 @@
   export let size: string = ctx.size || '24';
   export let role: string = ctx.role || 'img';
   export let color: string = ctx.color || 'currentColor';
-  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = ctx.variation || "outlined";
+  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
 
-export let ariaLabel="work";
- </script>
+  export let ariaLabel = 'work';
+</script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -37,14 +38,34 @@ export let ariaLabel="work";
   on:mouseout
 >
   {#if variation === 'outlined'}
-    <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+    <path
+      d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
+    />
   {:else if variation === 'filled'}
-    <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+    <path
+      d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
+    />
   {:else if variation === 'round'}
-    <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+    <path
+      d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
+    />
   {:else if variation === 'sharp'}
-    <path d="M22 6h-6V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H2v15h20V6zm-8 0h-4V4h4v2z"/>
+    <path d="M22 6h-6V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H2v15h20V6zm-8 0h-4V4h4v2z" />
   {:else if variation === 'two-tone'}
-    <path d="M4 8h16v11H4z" opacity=".3"/><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM10 4h4v2h-4V4zm10 15H4V8h16v11z"/>
+    <path d="M4 8h16v11H4z" opacity=".3" /><path
+      d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM10 4h4v2h-4V4zm10 15H4V8h16v11z"
+    />
   {/if}
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-google-materialdesign-icons.codewithshin.com)
+## Props
+@prop export let size: string = ctx.size || '24';
+@prop export let role: string = ctx.role || 'img';
+@prop export let color: string = ctx.color || 'currentColor';
+@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
+@prop export let ariaLabel = 'work';
+-->

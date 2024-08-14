@@ -8,6 +8,7 @@
 </script>
 
 <svelte:component
+  this={icon}
   on:click
   on:keydown
   on:keyup
@@ -17,11 +18,21 @@
   on:mouseleave
   on:mouseover
   on:mouseout
-  {...$$restProps} 
+  {...$$restProps}
   {role}
-  this={icon} 
-  {size} 
+  {size}
   {variation}
-  class={$$props.class} 
+  class={$$props.class}
   {ariaLabel}
 />
+
+<!--
+@component
+[Go to docs](https://svelte-google-materialdesign-icons.codewithshin.com)
+## Props
+@prop export let icon: ComponentType;
+@prop export let size: number = 24;
+@prop export let role: string = 'img';
+@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' = 'outlined';
+@prop export let ariaLabel: string = 'Icon';
+-->

@@ -3,7 +3,7 @@
     size?: string;
     role?: string;
     color?: string;
-    variation?: "filled" | "outlined" | "round" | "sharp" | "two-tone";
+    variation?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
   }
 
   import { getContext } from 'svelte';
@@ -12,10 +12,11 @@
   export let size: string = ctx.size || '24';
   export let role: string = ctx.role || 'img';
   export let color: string = ctx.color || 'currentColor';
-  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = ctx.variation || "outlined";
+  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
 
-export let ariaLabel="view headline";
- </script>
+  export let ariaLabel = 'view headline';
+</script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -37,14 +38,28 @@ export let ariaLabel="view headline";
   on:mouseout
 >
   {#if variation === 'outlined'}
-    <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/>
+    <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z" />
   {:else if variation === 'filled'}
-    <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/>
+    <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z" />
   {:else if variation === 'round'}
-    <path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/>
+    <path
+      d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"
+    />
   {:else if variation === 'sharp'}
-    <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/>
+    <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z" />
   {:else if variation === 'two-tone'}
-    <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/>
+    <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z" />
   {/if}
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-google-materialdesign-icons.codewithshin.com)
+## Props
+@prop export let size: string = ctx.size || '24';
+@prop export let role: string = ctx.role || 'img';
+@prop export let color: string = ctx.color || 'currentColor';
+@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
+    ctx.variation || 'outlined';
+@prop export let ariaLabel = 'view headline';
+-->
