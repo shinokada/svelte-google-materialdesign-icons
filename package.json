@@ -1,6 +1,6 @@
 {
   "name": "svelte-google-materialdesign-icons",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "description": "Google Materialdesign SVG icon components for Svelte",
   "author": {
