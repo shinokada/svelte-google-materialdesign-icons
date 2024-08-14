@@ -15,35 +15,6 @@
   export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
     ctx.variation || 'outlined';
 
-  let svgpath: string;
-  let svgfilled =
-    '<path d="M19 13H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0-10H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>';
-  let svgoutlined =
-    '<path d="M19 13H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6H5v-4h14v4zm0-16H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 6H5V5h14v4z"/>';
-  let svground =
-    '<path d="M19 13H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0-10H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>';
-  let svgsharp = '<path d="M3 13h18v8H3zM3 3h18v8H3z"/>';
-  let svgtwotone =
-    '<path d="M5 5h14v4H5zm0 10h14v4H5z" opacity=".3"/><path d="M19 13H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6H5v-4h14v4zm0-16H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 6H5V5h14v4z"/>';
-  switch (variation) {
-    case 'filled':
-      svgpath = svgfilled;
-      break;
-    case 'outlined':
-      svgpath = svgoutlined;
-      break;
-    case 'round':
-      svgpath = svground;
-      break;
-    case 'sharp':
-      svgpath = svgsharp;
-      break;
-    case 'two-tone':
-      svgpath = svgtwotone;
-      break;
-    default:
-      svgpath = svgoutlined;
-  }
   export let ariaLabel = 'view agenda';
 </script>
 
@@ -66,7 +37,23 @@
   on:mouseover
   on:mouseout
 >
-  {@html svgpath}
+  {#if variation === 'outlined'}
+    <path
+      d="M19 13H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6H5v-4h14v4zm0-16H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 6H5V5h14v4z"
+    />
+  {:else if variation === 'filled'}
+    <path
+      d="M19 13H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0-10H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+    />
+  {:else if variation === 'round'}
+    <path
+      d="M19 13H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0-10H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+    />
+  {:else if variation === 'sharp'}
+    <path d="M3 13h18v8H3zM3 3h18v8H3z" />
+  {:else if variation === 'two-tone'}
+    replace_svg_two
+  {/if}
 </svg>
 
 <!--

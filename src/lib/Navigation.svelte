@@ -15,34 +15,6 @@
   export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
     ctx.variation || 'outlined';
 
-  let svgpath: string;
-  let svgfilled = '<path d="M12 2 4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/>';
-  let svgoutlined =
-    '<path d="m12 7.27 4.28 10.43-3.47-1.53-.81-.36-.81.36-3.47 1.53L12 7.27M12 2 4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/>';
-  let svground =
-    '<path d="m12.93 4.26 6.15 14.99c.34.83-.51 1.66-1.33 1.29l-5.34-2.36c-.26-.11-.55-.11-.81 0l-5.34 2.36c-.82.36-1.67-.46-1.33-1.29l6.15-14.99c.33-.83 1.51-.83 1.85 0z"/>';
-  let svgsharp = '<path d="M12 2 4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/>';
-  let svgtwotone =
-    '<path d="m7.72 17.7 3.47-1.53.81-.36.81.36 3.47 1.53L12 7.27z" opacity=".3"/><path d="m4.5 20.29.71.71L12 18l6.79 3 .71-.71L12 2 4.5 20.29zm8.31-4.12-.81-.36-.81.36-3.47 1.53L12 7.27l4.28 10.43-3.47-1.53z"/>';
-  switch (variation) {
-    case 'filled':
-      svgpath = svgfilled;
-      break;
-    case 'outlined':
-      svgpath = svgoutlined;
-      break;
-    case 'round':
-      svgpath = svground;
-      break;
-    case 'sharp':
-      svgpath = svgsharp;
-      break;
-    case 'two-tone':
-      svgpath = svgtwotone;
-      break;
-    default:
-      svgpath = svgoutlined;
-  }
   export let ariaLabel = 'navigation';
 </script>
 
@@ -65,7 +37,21 @@
   on:mouseover
   on:mouseout
 >
-  {@html svgpath}
+  {#if variation === 'outlined'}
+    <path
+      d="m12 7.27 4.28 10.43-3.47-1.53-.81-.36-.81.36-3.47 1.53L12 7.27M12 2 4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"
+    />
+  {:else if variation === 'filled'}
+    <path d="M12 2 4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" />
+  {:else if variation === 'round'}
+    <path
+      d="m12.93 4.26 6.15 14.99c.34.83-.51 1.66-1.33 1.29l-5.34-2.36c-.26-.11-.55-.11-.81 0l-5.34 2.36c-.82.36-1.67-.46-1.33-1.29l6.15-14.99c.33-.83 1.51-.83 1.85 0z"
+    />
+  {:else if variation === 'sharp'}
+    <path d="M12 2 4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z" />
+  {:else if variation === 'two-tone'}
+    replace_svg_two
+  {/if}
 </svg>
 
 <!--

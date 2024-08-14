@@ -15,35 +15,6 @@
   export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
     ctx.variation || 'outlined';
 
-  let svgpath: string;
-  let svgfilled =
-    '<path d="M15.53 17.46 12 21l-3.53-3.54c.9-.9 2.15-1.46 3.53-1.46s2.63.56 3.53 1.46z"/>';
-  let svgoutlined =
-    '<path d="M15.53 17.46 12 21l-3.53-3.54c.9-.9 2.15-1.46 3.53-1.46s2.63.56 3.53 1.46z"/>';
-  let svground = '<circle cx="12" cy="18" r="2"/>';
-  let svgsharp =
-    '<path d="M15.53 17.46 12 21l-3.53-3.54c.9-.9 2.15-1.46 3.53-1.46s2.63.56 3.53 1.46z"/>';
-  let svgtwotone =
-    '<path d="M15.53 17.46 12 21l-3.53-3.54c.9-.9 2.15-1.46 3.53-1.46s2.63.56 3.53 1.46z"/>';
-  switch (variation) {
-    case 'filled':
-      svgpath = svgfilled;
-      break;
-    case 'outlined':
-      svgpath = svgoutlined;
-      break;
-    case 'round':
-      svgpath = svground;
-      break;
-    case 'sharp':
-      svgpath = svgsharp;
-      break;
-    case 'two-tone':
-      svgpath = svgtwotone;
-      break;
-    default:
-      svgpath = svgoutlined;
-  }
   export let ariaLabel = 'wifi 1 bar';
 </script>
 
@@ -66,7 +37,17 @@
   on:mouseover
   on:mouseout
 >
-  {@html svgpath}
+  {#if variation === 'outlined'}
+    <path d="M15.53 17.46 12 21l-3.53-3.54c.9-.9 2.15-1.46 3.53-1.46s2.63.56 3.53 1.46z" />
+  {:else if variation === 'filled'}
+    <path d="M15.53 17.46 12 21l-3.53-3.54c.9-.9 2.15-1.46 3.53-1.46s2.63.56 3.53 1.46z" />
+  {:else if variation === 'round'}
+    <circle cx="12" cy="18" r="2" />
+  {:else if variation === 'sharp'}
+    <path d="M15.53 17.46 12 21l-3.53-3.54c.9-.9 2.15-1.46 3.53-1.46s2.63.56 3.53 1.46z" />
+  {:else if variation === 'two-tone'}
+    replace_svg_two
+  {/if}
 </svg>
 
 <!--

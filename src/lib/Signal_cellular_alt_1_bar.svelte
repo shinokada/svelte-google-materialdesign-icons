@@ -15,32 +15,6 @@
   export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
     ctx.variation || 'outlined';
 
-  let svgpath: string;
-  let svgfilled = '<path d="M5 14h3v6H5v-6z"/>';
-  let svgoutlined = '<path d="M5 14h3v6H5v-6z"/>';
-  let svground =
-    '<path d="M6.5 20c-.83 0-1.5-.67-1.5-1.5v-3c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v3c0 .83-.67 1.5-1.5 1.5z"/>';
-  let svgsharp = '<path d="M5 14h3v6H5v-6z"/>';
-  let svgtwotone = '<path d="M5 14h3v6H5v-6z"/>';
-  switch (variation) {
-    case 'filled':
-      svgpath = svgfilled;
-      break;
-    case 'outlined':
-      svgpath = svgoutlined;
-      break;
-    case 'round':
-      svgpath = svground;
-      break;
-    case 'sharp':
-      svgpath = svgsharp;
-      break;
-    case 'two-tone':
-      svgpath = svgtwotone;
-      break;
-    default:
-      svgpath = svgoutlined;
-  }
   export let ariaLabel = 'signal cellular alt 1 bar';
 </script>
 
@@ -63,7 +37,19 @@
   on:mouseover
   on:mouseout
 >
-  {@html svgpath}
+  {#if variation === 'outlined'}
+    <path d="M5 14h3v6H5v-6z" />
+  {:else if variation === 'filled'}
+    <path d="M5 14h3v6H5v-6z" />
+  {:else if variation === 'round'}
+    <path
+      d="M6.5 20c-.83 0-1.5-.67-1.5-1.5v-3c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v3c0 .83-.67 1.5-1.5 1.5z"
+    />
+  {:else if variation === 'sharp'}
+    <path d="M5 14h3v6H5v-6z" />
+  {:else if variation === 'two-tone'}
+    replace_svg_two
+  {/if}
 </svg>
 
 <!--

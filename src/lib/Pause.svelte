@@ -15,32 +15,6 @@
   export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
     ctx.variation || 'outlined';
 
-  let svgpath: string;
-  let svgfilled = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
-  let svgoutlined = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
-  let svground =
-    '<path d="M8 19c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2s-2 .9-2 2v10c0 1.1.9 2 2 2zm6-12v10c0 1.1.9 2 2 2s2-.9 2-2V7c0-1.1-.9-2-2-2s-2 .9-2 2z"/>';
-  let svgsharp = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
-  let svgtwotone = '<path d="M6 5h4v14H6zm8 0h4v14h-4z"/>';
-  switch (variation) {
-    case 'filled':
-      svgpath = svgfilled;
-      break;
-    case 'outlined':
-      svgpath = svgoutlined;
-      break;
-    case 'round':
-      svgpath = svground;
-      break;
-    case 'sharp':
-      svgpath = svgsharp;
-      break;
-    case 'two-tone':
-      svgpath = svgtwotone;
-      break;
-    default:
-      svgpath = svgoutlined;
-  }
   export let ariaLabel = 'pause';
 </script>
 
@@ -63,7 +37,19 @@
   on:mouseover
   on:mouseout
 >
-  {@html svgpath}
+  {#if variation === 'outlined'}
+    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+  {:else if variation === 'filled'}
+    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+  {:else if variation === 'round'}
+    <path
+      d="M8 19c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2s-2 .9-2 2v10c0 1.1.9 2 2 2zm6-12v10c0 1.1.9 2 2 2s2-.9 2-2V7c0-1.1-.9-2-2-2s-2 .9-2 2z"
+    />
+  {:else if variation === 'sharp'}
+    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+  {:else if variation === 'two-tone'}
+    replace_svg_two
+  {/if}
 </svg>
 
 <!--

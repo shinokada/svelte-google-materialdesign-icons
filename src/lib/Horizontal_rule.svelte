@@ -15,32 +15,6 @@
   export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
     ctx.variation || 'outlined';
 
-  let svgpath: string;
-  let svgfilled = '<path fill-rule="evenodd" d="M4 11h16v2H4z"/>';
-  let svgoutlined = '<path fill-rule="evenodd" d="M4 11h16v2H4z"/>';
-  let svground =
-    '<path fill-rule="evenodd" d="M19 13H5c-.55 0-1-.45-1-1s.45-1 1-1h14c.55 0 1 .45 1 1s-.45 1-1 1z"/>';
-  let svgsharp = '<path fill-rule="evenodd" d="M4 11h16v2H4z"/>';
-  let svgtwotone = '<path fill-rule="evenodd" d="M4 11h16v2H4z"/>';
-  switch (variation) {
-    case 'filled':
-      svgpath = svgfilled;
-      break;
-    case 'outlined':
-      svgpath = svgoutlined;
-      break;
-    case 'round':
-      svgpath = svground;
-      break;
-    case 'sharp':
-      svgpath = svgsharp;
-      break;
-    case 'two-tone':
-      svgpath = svgtwotone;
-      break;
-    default:
-      svgpath = svgoutlined;
-  }
   export let ariaLabel = 'horizontal rule';
 </script>
 
@@ -63,7 +37,20 @@
   on:mouseover
   on:mouseout
 >
-  {@html svgpath}
+  {#if variation === 'outlined'}
+    <path fill-rule="evenodd" d="M4 11h16v2H4z" />
+  {:else if variation === 'filled'}
+    <path fill-rule="evenodd" d="M4 11h16v2H4z" />
+  {:else if variation === 'round'}
+    <path
+      fill-rule="evenodd"
+      d="M19 13H5c-.55 0-1-.45-1-1s.45-1 1-1h14c.55 0 1 .45 1 1s-.45 1-1 1z"
+    />
+  {:else if variation === 'sharp'}
+    <path fill-rule="evenodd" d="M4 11h16v2H4z" />
+  {:else if variation === 'two-tone'}
+    replace_svg_two
+  {/if}
 </svg>
 
 <!--

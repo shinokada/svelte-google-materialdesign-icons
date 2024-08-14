@@ -15,32 +15,6 @@
   export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
     ctx.variation || 'outlined';
 
-  let svgpath: string;
-  let svgfilled = '<path d="m5 12 1.41 1.41L12 7.83l5.59 5.58L19 12l-7-7z"/>';
-  let svgoutlined = '<path d="m5 12 1.41 1.41L12 7.83l5.59 5.58L19 12l-7-7z"/>';
-  let svground =
-    '<path d="M5.71 12.71c.39.39 1.02.39 1.41 0L12 7.83l4.88 4.88a.996.996 0 1 0 1.41-1.41L12.7 5.71a.996.996 0 0 0-1.41 0L5.7 11.3c-.38.38-.38 1.02.01 1.41z"/>';
-  let svgsharp = '<path d="m5 12 1.41 1.41L12 7.83l5.59 5.58L19 12l-7-7z"/>';
-  let svgtwotone = '<path d="m5 12 1.41 1.41L12 7.83l5.59 5.58L19 12l-7-7z"/>';
-  switch (variation) {
-    case 'filled':
-      svgpath = svgfilled;
-      break;
-    case 'outlined':
-      svgpath = svgoutlined;
-      break;
-    case 'round':
-      svgpath = svground;
-      break;
-    case 'sharp':
-      svgpath = svgsharp;
-      break;
-    case 'two-tone':
-      svgpath = svgtwotone;
-      break;
-    default:
-      svgpath = svgoutlined;
-  }
   export let ariaLabel = 'keyboard control key';
 </script>
 
@@ -63,7 +37,19 @@
   on:mouseover
   on:mouseout
 >
-  {@html svgpath}
+  {#if variation === 'outlined'}
+    <path d="m5 12 1.41 1.41L12 7.83l5.59 5.58L19 12l-7-7z" />
+  {:else if variation === 'filled'}
+    <path d="m5 12 1.41 1.41L12 7.83l5.59 5.58L19 12l-7-7z" />
+  {:else if variation === 'round'}
+    <path
+      d="M5.71 12.71c.39.39 1.02.39 1.41 0L12 7.83l4.88 4.88a.996.996 0 1 0 1.41-1.41L12.7 5.71a.996.996 0 0 0-1.41 0L5.7 11.3c-.38.38-.38 1.02.01 1.41z"
+    />
+  {:else if variation === 'sharp'}
+    <path d="m5 12 1.41 1.41L12 7.83l5.59 5.58L19 12l-7-7z" />
+  {:else if variation === 'two-tone'}
+    replace_svg_two
+  {/if}
 </svg>
 
 <!--

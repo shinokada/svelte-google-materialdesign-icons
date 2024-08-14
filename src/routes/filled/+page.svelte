@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Label from 'flowbite-svelte/Label.svelte';
   import Range from 'flowbite-svelte/Range.svelte';
   import Tabs from 'flowbite-svelte/Tabs.svelte';
@@ -14,7 +14,7 @@
   $: filteredEntries = Object.entries(Icons).filter(([name, component]) => {
     return name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1;
   });
-  let size = '24';
+  let size: number | undefined = 24;
 </script>
 
 <h1>Svelte Google Materialdesign Icons: Filled</h1>

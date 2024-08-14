@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { setContext } from 'svelte';
   import { Zoom_in, Work_off } from '$lib';
   const iconCtx = {

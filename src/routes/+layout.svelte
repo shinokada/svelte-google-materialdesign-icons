@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import '../app.postcss';
   import { page } from '$app/stores';
   import { afterNavigate } from '$app/navigation';
@@ -15,7 +15,7 @@
   import { MetaTags } from 'svelte-meta-tags';
   import Runatics from './utils/Runatics.svelte';
   export let data;
-  const analyticsId = data.ANALYTICS_ID
+  const analyticsId = data.ANALYTICS_ID;
 
   $: activeUrl = $page.url.pathname;
   const title = 'Svelte Google Materialdesign Icons';

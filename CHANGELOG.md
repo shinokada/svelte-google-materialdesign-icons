@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.0.3](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v1.0.2...v1.0.3) (2024-03-01)
 
-
 ### Bug Fixes
 
-* @typescript-eslint/eslint-plugin update ([b9dc996](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/b9dc996f98e7d302cf26abe3d3ea71eea8861ddc))
+- @typescript-eslint/eslint-plugin update ([b9dc996](https://github.com/shinokada/svelte-google-materialdesign-icons/commit/b9dc996f98e7d302cf26abe3d3ea71eea8861ddc))
 
 ### [1.0.2](https://github.com/shinokada/svelte-google-materialdesign-icons/compare/v1.0.1...v1.0.2) (2024-03-01)
 
