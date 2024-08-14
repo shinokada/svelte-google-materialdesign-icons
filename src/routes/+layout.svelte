@@ -15,7 +15,7 @@
   import { MetaTags } from 'svelte-meta-tags';
   import Runatics from './utils/Runatics.svelte';
   export let data;
-  const analyticsId = data.ANALYTICS_ID;
+  const analyticsId = data.ANALYTICS_ID_ICONS;
 
   $: activeUrl = $page.url.pathname;
   const title = 'Svelte Google Materialdesign Icons';

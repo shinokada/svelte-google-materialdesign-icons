@@ -3,7 +3,7 @@
     size?: string;
     role?: string;
     color?: string;
-    variation?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+    variation?: "filled" | "outlined" | "round" | "sharp" | "two-tone";
   }
 
   import { getContext } from 'svelte';
@@ -12,11 +12,10 @@
   export let size: string = ctx.size || '24';
   export let role: string = ctx.role || 'img';
   export let color: string = ctx.color || 'currentColor';
-  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
-    ctx.variation || 'outlined';
+  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = ctx.variation || "outlined";
 
-  export let ariaLabel = 'keyboard capslock';
-</script>
+export let ariaLabel="keyboard capslock";
+ </script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -38,28 +37,14 @@
   on:mouseout
 >
   {#if variation === 'outlined'}
-    <path d="M12 8.41 16.59 13 18 11.59l-6-6-6 6L7.41 13 12 8.41zM6 18h12v-2H6v2z" />
+    <path d="M12 8.41 16.59 13 18 11.59l-6-6-6 6L7.41 13 12 8.41zM6 18h12v-2H6v2z"/>
   {:else if variation === 'filled'}
-    <path d="M12 8.41 16.59 13 18 11.59l-6-6-6 6L7.41 13 12 8.41zM6 18h12v-2H6v2z" />
+    <path d="M12 8.41 16.59 13 18 11.59l-6-6-6 6L7.41 13 12 8.41zM6 18h12v-2H6v2z"/>
   {:else if variation === 'round'}
-    <path
-      d="m12 8.41 3.89 3.89a.996.996 0 1 0 1.41-1.41L12.71 6.3a.996.996 0 0 0-1.41 0l-4.6 4.59a.996.996 0 1 0 1.41 1.41L12 8.41zM7 18h10c.55 0 1-.45 1-1s-.45-1-1-1H7c-.55 0-1 .45-1 1s.45 1 1 1z"
-    />
+    <path d="m12 8.41 3.89 3.89a.996.996 0 1 0 1.41-1.41L12.71 6.3a.996.996 0 0 0-1.41 0l-4.6 4.59a.996.996 0 1 0 1.41 1.41L12 8.41zM7 18h10c.55 0 1-.45 1-1s-.45-1-1-1H7c-.55 0-1 .45-1 1s.45 1 1 1z"/>
   {:else if variation === 'sharp'}
-    <path d="M12 8.41 16.59 13 18 11.59l-6-6-6 6L7.41 13 12 8.41zM6 18h12v-2H6v2z" />
+    <path d="M12 8.41 16.59 13 18 11.59l-6-6-6 6L7.41 13 12 8.41zM6 18h12v-2H6v2z"/>
   {:else if variation === 'two-tone'}
-    replace_svg_two
+    <path d="M12 8.41 16.59 13 18 11.59l-6-6-6 6L7.41 13 12 8.41zM6 18h12v-2H6v2z"/>
   {/if}
 </svg>
-
-<!--
-@component
-[Go to docs](https://svelte-google-materialdesign-icons.codewithshin.com)
-## Props
-@prop export let size: string = ctx.size || '24';
-@prop export let role: string = ctx.role || 'img';
-@prop export let color: string = ctx.color || 'currentColor';
-@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
-    ctx.variation || 'outlined';
-@prop export let ariaLabel = 'keyboard capslock';
--->

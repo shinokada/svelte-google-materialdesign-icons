@@ -3,7 +3,7 @@
     size?: string;
     role?: string;
     color?: string;
-    variation?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+    variation?: "filled" | "outlined" | "round" | "sharp" | "two-tone";
   }
 
   import { getContext } from 'svelte';
@@ -12,11 +12,10 @@
   export let size: string = ctx.size || '24';
   export let role: string = ctx.role || 'img';
   export let color: string = ctx.color || 'currentColor';
-  export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
-    ctx.variation || 'outlined';
+  export let variation: "filled" | "outlined" | "round" | "sharp" | "two-tone" = ctx.variation || "outlined";
 
-  export let ariaLabel = 'rectangle';
-</script>
+export let ariaLabel="rectangle";
+ </script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -38,26 +37,14 @@
   on:mouseout
 >
   {#if variation === 'outlined'}
-    <path d="M2 4v16h20V4H2zm18 14H4V6h16v12z" />
+    <path d="M2 4v16h20V4H2zm18 14H4V6h16v12z"/>
   {:else if variation === 'filled'}
-    <path d="M2 4h20v16H2z" />
+    <path d="M2 4h20v16H2z"/>
   {:else if variation === 'round'}
-    <path d="M2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2z" />
+    <path d="M2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2z"/>
   {:else if variation === 'sharp'}
-    <path d="M2 4h20v16H2z" />
+    <path d="M2 4h20v16H2z"/>
   {:else if variation === 'two-tone'}
-    replace_svg_two
+    <path d="M4 6h16v12H4z" opacity=".3"/><path d="M2 4v16h20V4H2zm18 14H4V6h16v12z"/>
   {/if}
 </svg>
-
-<!--
-@component
-[Go to docs](https://svelte-google-materialdesign-icons.codewithshin.com)
-## Props
-@prop export let size: string = ctx.size || '24';
-@prop export let role: string = ctx.role || 'img';
-@prop export let color: string = ctx.color || 'currentColor';
-@prop export let variation: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone' =
-    ctx.variation || 'outlined';
-@prop export let ariaLabel = 'rectangle';
--->
