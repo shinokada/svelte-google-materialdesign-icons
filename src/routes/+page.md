@@ -386,7 +386,7 @@ You can find icon images at [Google Fonts](https://fonts.google.com/icons?select
 
 ## Original source
 
-[Google Fonts](https://github.com/google/fonts)
+[material-design-icons](https://github.com/marella/material-design-icons/tree/main/svg)
 
 ## License
 
